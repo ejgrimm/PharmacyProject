@@ -8,7 +8,7 @@ public class inPatient extends Patient {
 	//constructors
 	
 	public inPatient(String ssn, String name, String address, String phone, String insurance,
-			ArrayList<DrugLine> currentPrescription, int bedNum) {
+		ArrayList<DrugLine> currentPrescription, int bedNum) {
 		super(ssn, name, address, phone, insurance, currentPrescription);
 		this.bedNum = bedNum;
 	}
