@@ -6,3 +6,16 @@ narcotic
 pain,cough
 benzodiazepines,opioids,antihistamines,antipsychotics,anti-anxiety agents,CNS depressant
 
+Zohydro ER
+hydrocodone
+hydrocodone bitartrate,sugar spheres NF,hypromellose USP,ammonio methacrylate copolymer NF,silicon dioxide NF,talc USP,polyethylene oxide NF,povidone USP,titanium dioxide,FD&C Blue #1,FD&C Red #40,FDA Yellow iron oxide,FD&C Red #3,FDA Black iron oxide,FDA Red iron oxide,gelatin
+Zogenix
+narcotic
+pain
+alcohol,inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepines,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+
+
+
+
+
+
