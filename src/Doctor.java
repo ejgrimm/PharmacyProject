@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Doctor extends {
     
-    // data members
+    // data members  
     private String specialization;
     private ArrayList<Drug> watchlist;
     
