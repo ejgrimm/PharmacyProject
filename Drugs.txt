@@ -4,7 +4,7 @@ codeine,chlorpheniramine,cherry flavor,citric acid,D&C Red No. 30,ethyl maltol,g
 Tris Pharma
 narcotic
 pain,cough
-benzodiazepines,opioids,antihistamines,antipsychotics,anti-anxiety agents,CNS depressant
+benzodiazepine,opioids,antihistamines,antipsychotics,anti-anxiety agents,CNS depressant
 
 Zohydro ER
 hydrocodone
@@ -12,7 +12,34 @@ hydrocodone bitartrate,sugar spheres NF,hypromellose USP,ammonio methacrylate co
 Zogenix
 narcotic
 pain
-alcohol,inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepines,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+alcohol,inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+
+OxyContin
+oxycodone
+butylated hydroxytoluene,hypromellose,polyethylene glycol 400,polyethylene oxide,magnesium stearate,titanium dioxide
+Purdue Pharma
+narcotic
+pain
+inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+
+Robaxin
+methocarbamol
+methocarbamol,corn starch,FD&C Yellow 6,hydroxypropyl cellulose,hypromellose,magnesium stearate,polysorbate 20,povidone,propylene glycol,saccharin sodium,sodium lauryl sulfate,sodium starch glycolate,stearic acid,titanium dioxide
+Auxilium Pharmaceuticals, Inc.
+CNS depressant
+muscle spasms, pain
+pyridostigmine bromide
+
+Lantus
+insulin glargine
+zinc,m-cresol,glycerol 85%,polysorbate 20,water
+Sanofi
+hormone
+type
+diabetes mellitus
+atypical antipsychotics,corticosteroids,danazol,diuretics,estrogens,glucagon,isoniazid,niacin,oral contraceptives,phenothiazines,progestogens,protease inhibitors,somatropin,sympathomimetic agents,thyroid hormones
+
+
 
 
 
