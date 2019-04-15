@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class Doctor extends HealthcareProvider {
     
-    // data members  
+    // data members   
     private String specialization;
     private ArrayList<Drug> watchlist;
     
-    // constructors
+    // constructors - both
     public Doctor() {
         super();
         this.specialization = "TBD";
@@ -19,7 +19,7 @@ public class Doctor extends HealthcareProvider {
         this.watchlist = new ArrayList<Drug>();
     }
 
-    // getters & setters
+    // getters & setters 
     public String getSpecialization() {
         return specialization;
     }

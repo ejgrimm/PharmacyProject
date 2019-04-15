@@ -1,10 +1,10 @@
 
 public class Nurse extends HealthcareProvider {
     
-    // data members
+    // data members 
     private String department, staffID;
     
-    // constructors
+    // constructors 
     public Nurse() {
         super();
         this.department = "Unassigned";
@@ -17,7 +17,7 @@ public class Nurse extends HealthcareProvider {
         this.staffID = staffID;        
     }
 
-    // getters & setters
+    // getters & setters 
     public String getDepartment() {
         return department;
     }
@@ -37,6 +37,7 @@ public class Nurse extends HealthcareProvider {
     // other methods
     public boolean fillPrescription(Prescription rx) {
         // TBD
+        // still figuring this out
     }
     
     public boolean refillPrescription(DrugLine dl) {

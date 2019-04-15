@@ -1,10 +1,10 @@
 
 public class HealthcareProvider {
     
-    // data members
+    // data members 
     private String name, address, phone;
     
-    // constructors
+    // constructors 
     public HealthcareProvider() {
         this.name = "TBD";
         this.address = "TBD";
