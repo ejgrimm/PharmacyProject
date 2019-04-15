@@ -10,7 +10,7 @@ public class Prescription {
 	
 	
 	public Prescription(String id, String dateIssued, Doctor prescribingDoctor, ArrayList<DrugLine> setOfDrugLines,
-			Patient patient) {
+		Patient patient) {
 		super();
 		this.id = id;
 		this.dateIssued = dateIssued;
@@ -22,7 +22,7 @@ public class Prescription {
 
 	public String getId() {
 		return id;
-	}-
+	}
 
 
 	public void setId(String id) {
