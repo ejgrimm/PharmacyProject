@@ -1,5 +1,5 @@
 
-public class Nurse extends HealthcareProvider {
+public class Nurse extends HealthcareProvider implements PrescriptionFillable{
     
     // data members 
     private String department, staffID;
