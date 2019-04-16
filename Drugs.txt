@@ -35,7 +35,6 @@ insulin glargine
 zinc,m-cresol,glycerol 85%,polysorbate 20,water
 Sanofi
 hormone
-type
 diabetes mellitus
 atypical antipsychotics,corticosteroids,danazol,diuretics,estrogens,glucagon,isoniazid,niacin,oral contraceptives,phenothiazines,progestogens,protease inhibitors,somatropin,sympathomimetic agents,thyroid hormones
 
