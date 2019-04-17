@@ -1,20 +1,20 @@
 import java.util.ArrayList;
 
-public class inPatient extends Patient {
+public class inPatient extends Patient implements PrescriptionFillable{
 
 	//data members
 	private int bedNum;
 
 	//constructors
-	
-	public inPatient(String ssn, String name, String address, String phone, String insurance,
-		ArrayList<DrugLine> currentPrescription, int bedNum) {
-		super(ssn, name, address, phone, insurance, currentPrescription);
-		this.bedNum = bedNum;
-	}
-	
+		
 	public inPatient() {
 		super();
+	}
+
+	public inPatient(String ssn, String name, String address, String phone, String insurance, String type,
+			ArrayList<DrugLine> currentPrescription, int bedNum) {
+		super(ssn, name, address, phone, insurance, type, currentPrescription);
+		this.bedNum = bedNum;
 	}
 
 	//getters and setters
@@ -24,6 +24,18 @@ public class inPatient extends Patient {
 
 	public void setBedNum(int bedNum) {
 		this.bedNum = bedNum;
+	}
+
+	@Override
+	public boolean fillPrescription(Prescription rx) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void requestRefill(DrugLine dl) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	
