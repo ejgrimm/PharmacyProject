@@ -1,1 +1,47 @@
-Tuzistra XR;Codeine;codeine,chlorpheniramine,cherry flavor,citric acid,D&C Red No. 30,ethyl maltol,glycerin,methylparaben,polysorbate 80,polyvinyl acetate,povidone,propyl gallate,propylparaben,purified water,sodium citrate,sodium polystyrene sulfonate,starch,sucrose,triacetin,xanthan gum;Tris Pharma;narcotic;     
+Tuzistra XR
+codeine
+codeine,chlorpheniramine,cherry flavor,citric acid,D&C Red No. 30,ethyl maltol,glycerin,methylparaben,polysorbate 80,polyvinyl acetate,povidone,propyl gallate,propylparaben,purified water,sodium citrate,sodium polystyrene sulfonate,starch,sucrose,triacetin,xanthan gum
+Tris Pharma
+narcotic
+pain,cough
+benzodiazepine,opioids,antihistamines,antipsychotics,anti-anxiety agents,CNS depressant
+
+Zohydro ER
+hydrocodone
+hydrocodone bitartrate,sugar spheres NF,hypromellose USP,ammonio methacrylate copolymer NF,silicon dioxide NF,talc USP,polyethylene oxide NF,povidone USP,titanium dioxide,FD&C Blue #1,FD&C Red #40,FDA Yellow iron oxide,FD&C Red #3,FDA Black iron oxide,FDA Red iron oxide,gelatin
+Zogenix
+narcotic
+pain
+alcohol,inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+
+OxyContin
+oxycodone
+butylated hydroxytoluene,hypromellose,polyethylene glycol 400,polyethylene oxide,magnesium stearate,titanium dioxide
+Purdue Pharma
+narcotic
+pain
+inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+
+Robaxin
+methocarbamol
+methocarbamol,corn starch,FD&C Yellow 6,hydroxypropyl cellulose,hypromellose,magnesium stearate,polysorbate 20,povidone,propylene glycol,saccharin sodium,sodium lauryl sulfate,sodium starch glycolate,stearic acid,titanium dioxide
+Auxilium Pharmaceuticals, Inc.
+CNS depressant
+muscle spasms, pain
+pyridostigmine bromide
+
+Lantus
+insulin glargine
+zinc,m-cresol,glycerol 85%,polysorbate 20,water
+Sanofi
+hormone
+diabetes mellitus
+atypical antipsychotics,corticosteroids,danazol,diuretics,estrogens,glucagon,isoniazid,niacin,oral contraceptives,phenothiazines,progestogens,protease inhibitors,somatropin,sympathomimetic agents,thyroid hormones
+
+
+
+
+
+
+
+

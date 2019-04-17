@@ -1,0 +1,39 @@
+Sabrina Spellman;120-11-1029;November 10th, 1999
+
+Harvey Kinkle;118-10-3017;December 29th, 1995
+
+Hilda Spellman;163-54-2187;February 17th, 1973
+
+Ambrose Spellman;192-19-5781;October 19th, 1996
+
+Mary Wardwell;131-12-2313;November 23rd, 1966
+
+Rosalind Walker;698-21-0383;July 22nd, 1994
+
+Prudence Blackwood;456-78-9065;January 25th, 1996
+
+Agatha Night;985-32-6874;February 10th, 1995
+
+Faustus Blackwood;298-76-5432;February 27th, 1972
+
+Zelda Spellman;987-62-8213;December 16th, 1967
+
+Dorcus Night;987-65-7456;March 18th, 1998
+
+Theo Putnam;587-56-6602;April 12th, 2001
+
+Nicholas Scratch;129-38-2141;June 7th, 1994
+
+Luke Chalfant;657-39-4891;May 4th, 1989
+
+Billy Marlin;123-91-2839;September 6th, 1995
+
+Dorian Gray;108-31-9238;January 11th, 1989 
+
+George Hawthrone;387-81-2794;May 20th, 1959 
+
+Carl Tapper;987-54-5388;December 30th, 1999
+
+Diana Spellman;762-56-7891;July 8th, 2006
+
+Constance Blackwood;576-74-8839;August 2nd, 2005
