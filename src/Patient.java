@@ -4,15 +4,16 @@ public  abstract class Patient {
 
 	
 	//data members
-	private String ssn, name, address, phone, insurance;
+	private String ssn, name, address, phone, insurance, type;
 	private ArrayList<DrugLine> currentPrescription;
 	
 	//constructors
 	
-	public Patient(String ssn, String name, String address, String phone, String insurance,
+	public Patient(String ssn, String name, String address, String phone, String insurance,String type,
 			ArrayList<DrugLine> currentPrescription) {
 		super();
 		this.ssn = ssn;
+		this.type=type;
 		this.name = name;
 		this.address = address;
 		this.phone = phone;
@@ -72,6 +73,14 @@ public  abstract class Patient {
 
 	public void setCurrentPrescription(ArrayList<DrugLine> currentPrescription) {
 		this.currentPrescription = currentPrescription;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
 	}
 	
 
