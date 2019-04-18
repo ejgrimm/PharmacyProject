@@ -64,11 +64,19 @@ MAO inhibitor,serotonergic drug,olanzapine,CYP3A4 inhibitor,anticonvulsant,antip
 
 Ventolin HFA
 albuterol sulfate
-albuterol sulfate,propellant HFA-134a
+propellant HFA-134a
 GlaxoSmithKline
 bronchodilator
 asthma,chronic obstructive pulmonary disease,wheezing,shortness of breath
-beta-Adrenergic receptor blocking agents,non-potassium-sparing diuretics,digoxin
+beta blocker,non-potassium-sparing diuretics,digoxin
+
+Sectral
+acebutolol hydrochloride
+D&C Red 22,FD&C Blue 1,FD&C Yellow 6,gelatin,povidone,starch,stearic acid,titanium dioxide
+Sanofi
+beta blocker
+high blood pressure,arrhythmia
+catecholamine-depleting drug,nonsteroidal anti-inflammatory drugs,adrenergic antagonists,adrenergic stimulants
 
 
 
