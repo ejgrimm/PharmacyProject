@@ -38,6 +38,23 @@ hormone
 diabetes mellitus
 atypical antipsychotics,corticosteroids,danazol,diuretics,estrogens,glucagon,isoniazid,niacin,oral contraceptives,phenothiazines,progestogens,protease inhibitors,somatropin,sympathomimetic agents,thyroid hormones
 
+XANAX
+alprazolam
+cellulose,corn starch,docusate sodium,lactose,magnesium stearate,silicon dioxide,sodium benzoate
+Pfizer
+benzodiazepine
+anxiety,panic disorders
+tramadol,subutex,oxycodone
+
+
+
+
+
+
+
+
+
+
 
 
 
