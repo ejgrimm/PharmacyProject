@@ -94,6 +94,14 @@ stimulant
 ADHD,narcolepsy
 zoloft,wellbutrin,tramadol,prozac,lexapro,cymbalta,MAO inhibitor,serotonergic drug
 
+Amoxil
+amoxicillin
+D&C Red No. 28,FD&C Blue No. 1,FD&C Red No. 40,gelatin,magnesium stearate,titanium dioxide
+GlaxoSmithKline
+antibiotic
+infection
+acidifying agent,adrenergic blocker,alkalinizing agent,tricyclic antidepressant,CYP2D6 inhibitor,serotonergic drug,MAO inhibitor
+
 
 
 
