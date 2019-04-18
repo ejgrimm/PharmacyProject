@@ -12,7 +12,7 @@ hydrocodone bitartrate,sugar spheres NF,hypromellose USP,ammonio methacrylate co
 Zogenix
 narcotic
 pain
-alcohol,inhibitor of CYP3A4 and CYP2D6,CYP3A4 inducer,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesic,muscle relaxant,diuretic,anticholinergic drug
+alcohol,inhibitor of CYP3A4 and CYP2D6,CYP3A4 inducer,benzodiazepine,CNS depressant,serotonergic drug,monoamine oxidase inhibitors,opioid analgesic,muscle relaxant,diuretic,anticholinergic drug
 
 OxyContin
 oxycodone
@@ -91,6 +91,9 @@ dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate,a
 lactitol,microcrystalline cellulose,colloidal silicon dioxide,magnesium stearate
 Teva
 stimulant
+ADHD,narcolepsy
+zoloft,wellbutrin,tramadol,prozac,lexapro,cymbalta,MAO inhibitor,serotonergic drug
+
 
 
 
