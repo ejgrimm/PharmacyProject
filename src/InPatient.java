@@ -1,17 +1,17 @@
 import java.util.ArrayList;
 
-public class inPatient extends Patient implements PrescriptionFillable{
+public class InPatient extends Patient implements PrescriptionFillable{
 
 	//data members
 	private int bedNum;
 
 	//constructors
 		
-	public inPatient() {
+	public InPatient() {
 		super();
 	}
 
-	public inPatient(String ssn, String name, String address, String phone, String insurance, String type,
+	public InPatient(String ssn, String name, String address, String phone, String insurance, String type,
 			ArrayList<DrugLine> currentPrescription, int bedNum) {
 		super(ssn, name, address, phone, insurance, type, currentPrescription);
 		this.bedNum = bedNum;

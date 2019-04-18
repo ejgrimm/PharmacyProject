@@ -1,17 +1,17 @@
 import java.util.ArrayList;
 
-public class outPatient extends Patient implements PrescriptionFillable{
+public class OutPatient extends Patient implements PrescriptionFillable{
 
 	//data members
 	private String lastVisit;
 
 	//constructors	
 	
-	public outPatient() {
+	public OutPatient() {
 		super();
 	}
 
-	public outPatient(String ssn, String name, String address, String phone, String insurance, String type,
+	public OutPatient(String ssn, String name, String address, String phone, String insurance, String type,
 			ArrayList<DrugLine> currentPrescription, String lastVisit) {
 		super(ssn, name, address, phone, insurance, type, currentPrescription);
 		this.lastVisit = lastVisit;
