@@ -65,6 +65,11 @@ MAO inhibitor,serotonergic drug,olanzapine,CYP3A4 inhibitor,anticonvulsant,antip
 Ventolin HFA
 albuterol sulfate
 albuterol sulfate,propellant HFA-134a
+GlaxoSmithKline
+bronchodilator
+asthma,chronic obstructive pulmonary disease,wheezing,shortness of breath
+beta-Adrenergic receptor blocking agents,non-potassium-sparing diuretics,digoxin
+
 
 
 
