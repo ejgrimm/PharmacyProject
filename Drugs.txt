@@ -89,6 +89,8 @@ antacid,antibiotic,anticonvulsant,antifungal,cholesterol lowering agent,HCV prot
 Adderall
 dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate,amphetamine sulfate
 lactitol,microcrystalline cellulose,colloidal silicon dioxide,magnesium stearate
+Teva
+stimulant
 
 
 
