@@ -62,6 +62,9 @@ SSRI
 depression,obsessive-compulsive disorder,bulimia nervosa,panic disorder
 MAO inhibitor,serotonergic drug,olanzapine,CYP3A4 inhibitor,anticonvulsant,antipsychotic,benzodiazepine,TCA,CYP2D6 inducer
 
+Ventolin HFA
+albuterol sulfate
+albuterol sulfate,propellant HFA-134a
 
 
 
