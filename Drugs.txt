@@ -102,13 +102,31 @@ antibiotic
 infection
 acidifying agent,adrenergic blocker,alkalinizing agent,tricyclic antidepressant,CYP2D6 inhibitor,serotonergic drug,MAO inhibitor
 
+Humalog
+insulin lispro
+glycerin,dibasic sodium phosphate,metacresol,zinc oxide,phenol,wate
+Eli Lilly
+insulin
+diabetes mellitus
+atypical antipsychotic,corticosteroid,danazol,diuretic,estrogen,glucagon,isoniazid,niacin,oral contraceptive,phenothiazine,progestogen,protease inhibitor,somatropin,sympathomimetic agent,thyroid hormones
+
+Risperdal
+risperidone
+colloidal silicon dioxide,hypromellose,lactose,magnesium stearate,microcrystalline cellulose,propylene glycol,sodium lauryl sulfate,starch
+Janssen Pharmaceuticals
 
 
+Ambien
 
 
+Eskalith
 
 
+Abstral
 
 
+Flovent HFA
 
+
+Methadose
 
