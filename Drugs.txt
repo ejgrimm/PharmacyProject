@@ -4,7 +4,7 @@ codeine,chlorpheniramine,cherry flavor,citric acid,D&C Red No. 30,ethyl maltol,g
 Tris Pharma
 narcotic
 pain,cough
-benzodiazepine,opioids,antihistamines,antipsychotics,anti-anxiety agents,CNS depressant
+benzodiazepine,opioid,antihistamine,antipsychotic,anti-anxiety agent,CNS depressant
 
 Zohydro ER
 hydrocodone
@@ -12,7 +12,7 @@ hydrocodone bitartrate,sugar spheres NF,hypromellose USP,ammonio methacrylate co
 Zogenix
 narcotic
 pain
-alcohol,inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+alcohol,inhibitor of CYP3A4 and CYP2D6,CYP3A4 inducer,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesic,muscle relaxant,diuretic,anticholinergic drug
 
 OxyContin
 oxycodone
@@ -20,7 +20,7 @@ butylated hydroxytoluene,hypromellose,polyethylene glycol 400,polyethylene oxide
 Purdue Pharma
 narcotic
 pain
-inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+inhibitor of CYP3A4 and CYP2D6,CYP3A4 inducer,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesic,muscle relaxant,diuretic,anticholinergic drug
 
 Robaxin
 methocarbamol
@@ -36,9 +36,9 @@ zinc,m-cresol,glycerol 85%,polysorbate 20,water
 Sanofi
 hormone
 diabetes mellitus
-atypical antipsychotics,corticosteroids,danazol,diuretics,estrogens,glucagon,isoniazid,niacin,oral contraceptives,phenothiazines,progestogens,protease inhibitors,somatropin,sympathomimetic agents,thyroid hormones
+atypical antipsychotic,corticosteroid,danazol,diuretic,estrogen,glucagon,isoniazid,niacin,oral contraceptive,phenothiazine,progestogen,protease inhibitor,somatropin,sympathomimetic agent,thyroid hormones
 
-XANAX
+Xanax
 alprazolam
 cellulose,corn starch,docusate sodium,lactose,magnesium stearate,silicon dioxide,sodium benzoate
 Pfizer
@@ -46,9 +46,21 @@ benzodiazepine
 anxiety,panic disorders
 tramadol,subutex,oxycodone
 
+Ultram
+tramadol hydrochloride
+carnauba wax,corn starch,hypromellose,lactose,magnesium stearate,microcrystalline cellulose,polyethylene glycol,polysorbate 80,sodium starch glycolate,titanium dioxide.
+Johnson & Johnson
+narcotic
+pain
+MAO inhibitor,SSRI,TCA,CNS depressant,CYP2D6 and CYP3A4 inhibitor
 
-
-
+Prozac
+fluoxetine hydrochloride
+starch, gelatin, silicone, titanium dioxide, iron oxide
+Eli Lilly
+SSRI
+depression,obsessive-compulsive disorder,bulimia nervosa,panic disorder
+MAO inhibitor,serotonergic drug,olanzapine,CYP3A4 inhibitor,anticonvulsant,antipsychotic,benzodiazepine,TCA,CYP2D6 inducer
 
 
 
