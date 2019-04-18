@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class OutPatient extends Patient implements PrescriptionFillable{
+public class OutPatient extends Patient implements PrescriptionFillable {
 
 	//data members
 	private String lastVisit;

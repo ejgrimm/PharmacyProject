@@ -44,4 +44,10 @@ public class Nurse extends HealthcareProvider implements PrescriptionFillable{
         // TBD
     }
 
+	@Override
+	public void requestRefill(DrugLine dl) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
