@@ -1,29 +1,21 @@
 
-public class HealthcareProvider {
+public class HealthcareProvider extends Person {
     
     // data members 
-    private String name, address, phone;
+    private String address, phone;
     
     // constructors 
     public HealthcareProvider() {
-        this.name = "TBD";
+        super();
         this.address = "TBD";
         this.phone = "TBD";    
     }
 
     // getters & setters 
-    public HealthcareProvider (String name, String address, String phone) {
-        this.name = name;
+    public HealthcareProvider (String name, String ssn, String address, String phone) {
+        super(name, ssn);
         this.address = address;
         this.phone = phone;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getAddress() {

@@ -1,5 +1,5 @@
 
-public class Nurse extends HealthcareProvider implements PrescriptionFillable{
+public class Nurse extends Person {
     
     // data members 
     private String department, staffID;
@@ -11,8 +11,8 @@ public class Nurse extends HealthcareProvider implements PrescriptionFillable{
         this.staffID = "TBD";
     }
     
-    public Nurse(String name, String address, String phone, String department, String staffID) {
-        super(name, address, phone);
+    public Nurse(String name, String ssn, String address, String phone, String department, String staffID) {
+        super(name, ssn, address, phone);
         this.department = department;
         this.staffID = staffID;        
     }
@@ -33,21 +33,5 @@ public class Nurse extends HealthcareProvider implements PrescriptionFillable{
     public void setStaffID(String staffID) {
         this.staffID = staffID;
     }
-    
-    // other methods
-    public boolean fillPrescription(Prescription rx) {
-        // TBD
-        // still figuring this out
-    }
-    
-    public boolean refillPrescription(DrugLine dl) {
-        // TBD
-    }
-
-	@Override
-	public void requestRefill(DrugLine dl) {
-		// TODO Auto-generated method stub
-		
-	}
 
 }
