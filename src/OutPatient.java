@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class OutPatient extends Patient implements PrescriptionFillable {
+public class OutPatient extends Patient {
 
 	//data members
 	private String lastVisit;
@@ -11,10 +11,11 @@ public class OutPatient extends Patient implements PrescriptionFillable {
 		super();
 	}
 
-	public OutPatient(String ssn, String name, String address, String phone, String insurance, String type,
+	public OutPatient(String name, String ssn, String address, String phone, String insurance,
 			ArrayList<DrugLine> currentPrescription, String lastVisit) {
-		super(ssn, name, address, phone, insurance, type, currentPrescription);
+		super(name, ssn, address, phone, insurance, currentPrescription);
 		this.lastVisit = lastVisit;
+		setType("OutPatient");
 	}
 
 	//getters and setters
@@ -25,20 +26,5 @@ public class OutPatient extends Patient implements PrescriptionFillable {
 	public void setLastVisit(String lastVisit) {
 		this.lastVisit = lastVisit;
 	}
-
-	@Override
-	public boolean fillPrescription(Prescription rx) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public void requestRefill(DrugLine dl) {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	
-	
 	
 }

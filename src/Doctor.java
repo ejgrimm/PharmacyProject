@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Doctor extends HealthcareProvider {
+public class Doctor extends Person {
     
     // data members   
     private String specialization;
@@ -13,8 +14,8 @@ public class Doctor extends HealthcareProvider {
         this.watchlist = new ArrayList<Drug>();
     }
     
-    public Doctor(String name, String address, String phone, String specialization) {
-        super(name, address, phone);
+    public Doctor(String name, String ssn, String address, String phone, String specialization) {
+        super(name, ssn, address, phone);
         this.specialization = specialization;
         this.watchlist = new ArrayList<Drug>();
     }
@@ -35,5 +36,37 @@ public class Doctor extends HealthcareProvider {
     public void setWatchlist(ArrayList<Drug> watchlist) {
         this.watchlist = watchlist;
     }
+    
+    // other methods
+    
+    // run this method BEFORE addToWatchlist!!!
+    public void watchlistAlert(Drug d) {
+        // if any Drug occurs on the doctor's watchlist more than xx times
+        if (this.watchlist.contains(d)) {
+            // count occurrences of Drug in Array List
+            int numTimes = 0;
+            Iterator<Drug> i = watchlist.iterator();
+            while (i.hasNext()) {
+                if (i.next() == d) {
+                    numTimes++;
+                }
+            }
+            if (numTimes > 5) {
+                System.out.println("Caution! " + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
+            }
+            else {
+                System.out.println("All clear!" + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
+            }           
+        }
+        else {
+           System.out.println("1st Time Prescription by " + this.getName() + " for "+ d.getName() + "."); 
+        }
+
+    }
+
+    // adds new Drug element for ArrayList for every prescription by doctor
+    public void addToWatchlist(Drug d) {
+        this.watchlist.add(d);
+    }    
     
 }

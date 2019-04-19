@@ -1,22 +1,16 @@
 import java.util.ArrayList;
 
-public  abstract class Patient {
+public  abstract class Patient extends Person {
 
 	
 	//data members
-	private String ssn, name, address, phone, insurance, type;
+	private String insurance, type;
 	private ArrayList<DrugLine> currentPrescription;
 	
 	//constructors
-	
-	public Patient(String ssn, String name, String address, String phone, String insurance,String type,
+	public Patient(String name, String ssn, String address, String phone, String insurance,
 			ArrayList<DrugLine> currentPrescription) {
-		super();
-		this.ssn = ssn;
-		this.type=type;
-		this.name = name;
-		this.address = address;
-		this.phone = phone;
+		super(name, ssn, address, phone);
 		this.insurance = insurance;
 		this.currentPrescription = currentPrescription;
 	}
@@ -26,38 +20,6 @@ public  abstract class Patient {
 	}
 
 	//getters and setters
-	
-	public String getSsn() {
-		return ssn;
-	}
-
-	public void setSsn(String ssn) {
-		this.ssn = ssn;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
 
 	public String getInsurance() {
 		return insurance;
@@ -83,9 +45,8 @@ public  abstract class Patient {
 		this.type = type;
 	}
 	
-
-	
-	
-	
-	
+	// other methods
+	public void addNewPrescription(DrugLine dl) {
+	    this.currentPrescription.add(dl);
+	}
 }

@@ -1,7 +1,7 @@
 
 public class DrugLine {
 
-	//datamembers
+	//data members
 	private Drug drug;
 	private String dosage;
 	private int remainingRefills;
@@ -53,6 +53,11 @@ public class DrugLine {
 		this.timesRefilled = timesRefilled;
 	}
 	
+	// other methods
+	public void updateDrugLine() {
+	    this.timesRefilled += 1;
+	    this.remainingRefills -= 1;
+	}
 	
 	
 }

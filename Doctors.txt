@@ -1,0 +1,20 @@
+Dr. Derek Shepherd;211-46-7894;200 N Lakemont Ave, Winter Park, FL 32792;(407) 646-7010;Neurosurgery
+Dr. Miranda Bailey;554-75-3621;200 N Lakemont Ave, Winter Park, FL 32792; (407) 646-7020;Pediatric Surgery
+Dr. Theodore "Teddy" Altman;789-12-4563;200 N Lakemont Ave, Winter Park, FL 32792;(407) 646-7030;Cardiothoracic Surgery
+Dr. Jackson Avery;123-45-7895;52 W Underwood St, Orlando, FL 32806;(321) 841-5111;Plastic Surgery
+Dr. Owen Hunt;321-65-4789;52 W Underwood St, Orlando, FL 32806;(321) 841-5122;Trama Surgery
+Dr. Richard Webber;654-78-9321;83 W Miller St, Orlando, FL, 32806;(321) 843-9792;General Surgery
+Dr. Preston Burke;646-89-7412;83 W Miller St, Orlando, FL, 32806;(321) 843-9784;Cardiothoracic Surgery
+Dr. Meredith Grey;595-89-7412;325 Ninth Ave, Seattle, WA 98104;(206) 744-3045;Endocrinology
+Dr. Erica Hahn;505-98-1234;325 Ninth Ave, Seattle, WA 98104;(206) 744-3775;Cardiothoracic Surgery
+Dr. Atticus "Link" Lincoln;364-12-0156;325 Ninth Ave, Seattle, WA 98104;(206) 744-3498;Orthopedic Surgery
+Dr. Addison Montgomery;325-45-3251;325 Ninth Ave, Seattle, WA 98104;(206) 744-3795;Obstetrics and Gynecology
+Dr. Margaret "Maggie" Pierce;523-23-5235;325 Ninth Ave, Seattle, WA 98104;(206) 744-3963;Psychiatry
+Dr. Arizona Robbins;698-75-1268;200 N Lakemont Ave, Winter Park, FL 32792;(407) 646-7035;Pediatric Surgery
+Dr. Amelia Shepherd;798-65-1236;83 W Miller St, Orlando, FL, 32806;(321) 843-9895;Plastic Surgery
+Dr. Calliope "Callie" Torres;369-25-8741;13535 Nemours Pkwy, Orlando, FL 32827;(407) 567-4050;Orthopedic Surgery
+Dr. April Kepner;269-69-5469;13535 Nemours Pkwy, Orlando, FL 32827;(407) 567-4070;Trauma Surgy
+Dr. Alexandra "Lexie" Grey;274-91-8768;13535 Nemours Pkwy, Orlando, FL 32827;(407) 567-4085;General Surgery
+Dr. Christina Yang;574-23-7838;13535 Nemours Pkwy, Orlando, FL 32827;(407) 567-4085;Pain Management
+Dr. George O'Malley;418-62-9874;601 E Rollins St, Orlando, FL 32803; (407) 303-6615;Psychiatry
+Dr. Isobel "Izzie" Stevens;202-59-7869;601 E Rollins St, Orlando, FL 32803;(407) 303-6625;Pediatrics
