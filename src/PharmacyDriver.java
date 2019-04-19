@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.util.ArrayList;
 
 public class PharmacyDriver {
 
@@ -12,6 +12,9 @@ public class PharmacyDriver {
         
         readFile("Patient.txt");
         readFile("Drugs.txt");
+        readFile("Doctors.txt");
+        readFile("Pharmacist.txt");
+        readFile("Prescriptions.txt");
        
         
         
@@ -27,7 +30,19 @@ public class PharmacyDriver {
         }
         
         while (scan.hasNextLine()) {
-            //fillArrayList(scan.nextLine());
+            String currentLine = scan.nextLine();
+            String[] values = currentLine.split(";");
+            if (fileName.contains("Patient")) {
+                ArrayList<Patient> patients = new ArrayList<Patient>();
+                if (values[0].equals("inPatient")) {
+                    ArrayList<DrugLine> drugLine = new ArrayList<DrugLine>();
+                    // NONFUNCTIONAL - TO FIX drugLine.add(new DrugLine(Drug(can't be a string!!), dlElements[2], Integer.parseInt(dlElements[3]), Integer.parseInt(dlElements[4])));
+                    patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], drugLine, Integer.parseInt(values[7])));
+                }
+            }
+            else if (fileName.contains("Doctor")) {
+                
+            }
         }
         scan.close();
     }
