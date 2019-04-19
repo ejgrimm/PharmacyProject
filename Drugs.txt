@@ -2,31 +2,31 @@ Tuzistra XR
 codeine
 codeine,chlorpheniramine,cherry flavor,citric acid,D&C Red No. 30,ethyl maltol,glycerin,methylparaben,polysorbate 80,polyvinyl acetate,povidone,propyl gallate,propylparaben,purified water,sodium citrate,sodium polystyrene sulfonate,starch,sucrose,triacetin,xanthan gum
 Tris Pharma
-narcotic
+narcotics
 pain,cough
-benzodiazepine,opioid,antihistamine,antipsychotic,anti-anxiety agent,CNS depressant
+benzodiazepines,opioids,antihistamines,antipsychotics,anti-anxiety agents,CNS depressants
 
 Zohydro ER
 hydrocodone
 hydrocodone bitartrate,sugar spheres NF,hypromellose USP,ammonio methacrylate copolymer NF,silicon dioxide NF,talc USP,polyethylene oxide NF,povidone USP,titanium dioxide,FD&C Blue #1,FD&C Red #40,FDA Yellow iron oxide,FD&C Red #3,FDA Black iron oxide,FDA Red iron oxide,gelatin
 Zogenix
-narcotic
+narcotics
 pain
-alcohol,inhibitor of CYP3A4 and CYP2D6,CYP3A4 inducer,benzodiazepine,CNS depressant,serotonergic drug,monoamine oxidase inhibitors,opioid analgesic,muscle relaxant,diuretic,anticholinergic drug
+alcohol,inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepines,CNS depressants,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
 
 OxyContin
 oxycodone
 butylated hydroxytoluene,hypromellose,polyethylene glycol 400,polyethylene oxide,magnesium stearate,titanium dioxide
 Purdue Pharma
-narcotic
+narcotics
 pain
-inhibitor of CYP3A4 and CYP2D6,CYP3A4 inducer,benzodiazepine,CNS depressant,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesic,muscle relaxant,diuretic,anticholinergic drug
+inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepines,CNS depressants,serotonergic drugs,monoamine oxidase inhibitorss,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
 
 Robaxin
 methocarbamol
 methocarbamol,corn starch,FD&C Yellow 6,hydroxypropyl cellulose,hypromellose,magnesium stearate,polysorbate 20,povidone,propylene glycol,saccharin sodium,sodium lauryl sulfate,sodium starch glycolate,stearic acid,titanium dioxide
 Auxilium Pharmaceuticals, Inc.
-CNS depressant
+CNS depressants
 muscle spasms, pain
 pyridostigmine bromide
 
@@ -34,15 +34,15 @@ Lantus
 insulin glargine
 zinc,m-cresol,glycerol 85%,polysorbate 20,water
 Sanofi
-hormone
+hormones
 diabetes mellitus
-atypical antipsychotic,corticosteroid,danazol,diuretic,estrogen,glucagon,isoniazid,niacin,oral contraceptive,phenothiazine,progestogen,protease inhibitor,somatropin,sympathomimetic agent,thyroid hormones
+atypical antipsychotics,corticosteroids,danazols,diuretics,estrogen,glucagon,isoniazid,niacin,contraceptives,phenothiazine,progestogen,protease inhibitors,somatropin,sympathomimetic agents,thyroid hormones
 
 Xanax
 alprazolam
 cellulose,corn starch,docusate sodium,lactose,magnesium stearate,silicon dioxide,sodium benzoate
 Pfizer
-benzodiazepine
+benzodiazepines
 anxiety,panic disorders
 tramadol,subutex,oxycodone
 
@@ -50,83 +50,98 @@ Ultram
 tramadol hydrochloride
 carnauba wax,corn starch,hypromellose,lactose,magnesium stearate,microcrystalline cellulose,polyethylene glycol,polysorbate 80,sodium starch glycolate,titanium dioxide.
 Johnson & Johnson
-narcotic
+narcotics
 pain
-MAO inhibitor,SSRI,TCA,CNS depressant,CYP2D6 and CYP3A4 inhibitor
+MAO inhibitors,SSRIs,TCAs,CNS depressants,CYP2D6 and CYP3A4 inhibitors
 
 Prozac
 fluoxetine hydrochloride
 starch, gelatin, silicone, titanium dioxide, iron oxide
 Eli Lilly
-SSRI
+SSRIs
 depression,obsessive-compulsive disorder,bulimia nervosa,panic disorder
-MAO inhibitor,serotonergic drug,olanzapine,CYP3A4 inhibitor,anticonvulsant,antipsychotic,benzodiazepine,TCA,CYP2D6 inducer
+MAO inhibitors,serotonergic drugs,olanzapines,CYP3A4 inhibitors,anticonvulsants,antipsychotics,benzodiazepines,TCAs,CYP2D6 inducers
 
 Ventolin HFA
 albuterol sulfate
 propellant HFA-134a
 GlaxoSmithKline
-bronchodilator
+bronchodilators
 asthma,chronic obstructive pulmonary disease,wheezing,shortness of breath
-beta blocker,non-potassium-sparing diuretics,digoxin
+beta blockers,non-potassium-sparing diuretics,digoxins
 
 Sectral
 acebutolol hydrochloride
 D&C Red 22,FD&C Blue 1,FD&C Yellow 6,gelatin,povidone,starch,stearic acid,titanium dioxide
 Sanofi
-beta blocker
+beta blockers
 high blood pressure,arrhythmia
-catecholamine-depleting drug,nonsteroidal anti-inflammatory drugs,adrenergic antagonists,adrenergic stimulants
+catecholamine-depleting drugs,nonsteroidal anti-inflammatory drugs,adrenergic antagonists,adrenergic stimulants
 
 Yaz
 drospirenone,ethinyl estradiol
 lactose monohydrate NF,corn starch NF,magnesium stearate NF,hypromellose USP,talc USP,titanium dioxide USP,ferric oxide pigment,red NF
 Bayer
-contraceptive
+contraceptives
 birth control
-antacid,antibiotic,anticonvulsant,antifungal,cholesterol lowering agent,HCV protease,inhibitor,HIV protease inhibitor,non-nucleoside reverse transcriptase inhibitor,aedative,hypnotic,analgesic,antihistamines,antimigraine preparation,phenylbutazone preparation,vitamin E
+antacids,antibiotics,anticonvulsants,antifungals,cholesterol lowering agents,HCV protease inhibitors,HIV protease inhibitors,non-nucleoside reverse transcriptase inhibitors,aedatives,hypnotics,analgesics,antihistamines,antimigraine preparations,phenylbutazone preparations,vitamin E
 
 Adderall
 dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate,amphetamine sulfate
 lactitol,microcrystalline cellulose,colloidal silicon dioxide,magnesium stearate
 Teva
-stimulant
+stimulants
 ADHD,narcolepsy
-zoloft,wellbutrin,tramadol,prozac,lexapro,cymbalta,MAO inhibitor,serotonergic drug
+zoloft,wellbutrin,tramadol,prozac,lexapro,cymbalta,MAO inhibitors,serotonergic drugs
 
 Amoxil
 amoxicillin
 D&C Red No. 28,FD&C Blue No. 1,FD&C Red No. 40,gelatin,magnesium stearate,titanium dioxide
 GlaxoSmithKline
-antibiotic
+antibiotics
 infection
-acidifying agent,adrenergic blocker,alkalinizing agent,tricyclic antidepressant,CYP2D6 inhibitor,serotonergic drug,MAO inhibitor
+acidifying agents,adrenergic blockers,alkalinizing agents,tricyclic antidepressants,CYP2D6 inhibitors,serotonergic drugs,MAO inhibitors
 
 Humalog
 insulin lispro
 glycerin,dibasic sodium phosphate,metacresol,zinc oxide,phenol,wate
 Eli Lilly
-insulin
+hormones
 diabetes mellitus
-atypical antipsychotic,corticosteroid,danazol,diuretic,estrogen,glucagon,isoniazid,niacin,oral contraceptive,phenothiazine,progestogen,protease inhibitor,somatropin,sympathomimetic agent,thyroid hormones
+atypical antipsychotics,corticosteroids,danazols,diuretics,estrogen,glucagon,isoniazid,niacin,contraceptives,phenothiazine,progestogen,protease inhibitors,somatropin,sympathomimetic agents,thyroid hormones
 
 Risperdal
 risperidone
 colloidal silicon dioxide,hypromellose,lactose,magnesium stearate,microcrystalline cellulose,propylene glycol,sodium lauryl sulfate,starch
 Janssen Pharmaceuticals
-
+antipsychotics
+schizophrenia,bipolar disorder,irritability 
+antidepressants,heartburn drugs,CYP2D6 inhibitors,clozapine,digoxin,valproate,lithium
 
 Ambien
-
+zolpidem tartrate
+hydroxypropyl methylcellulose,lactose,magnesium stearate,microcrystalline cellulose,polyethylene glycol,sodium starch glycolate,titanium dioxide
+Sanofi
+sedatives
+insomnia
+CNS depressants,imipramine,chlorpromazine,rifampin,CYP3A4 inhibitors,ketoconazole,haloperidol
 
 Eskalith
+
 
 
 Abstral
 
 
+
 Flovent HFA
 
 
-Methadose
 
+Methadose
+methadone hydrochloride
+dibasic calcium phosphate,microcrystalline cellulose,magnesium stearate,colloidal silicon dioxide,pregelatinized starch,stearic acid
+Mallinckrodt Pharmaceuticals
+opioid analgesics
+opiod addiction
+cytochrome P450 inducers,cytochrome P450 inhibitors,CNS depressants,MAO inhibitors,alcohol,barbiturates,benzodiazepines,buprenorphine,carbamazepine,chloral hydrate,chlormethiazole,cimetidine,urine alkalisers
