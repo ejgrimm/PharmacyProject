@@ -1,6 +1,6 @@
 Tuzistra XR
 codeine
-codeine,chlorpheniramine,cherry flavor,citric acid,D&C Red No. 30,ethyl maltol,glycerin,methylparaben,polysorbate 80,polyvinyl acetate,povidone,propyl gallate,propylparaben,purified water,sodium citrate,sodium polystyrene sulfonate,starch,sucrose,triacetin,xanthan gum
+chlorpheniramine,cherry flavor,citric acid,D&C Red No. 30,ethyl maltol,glycerin,methylparaben,polysorbate 80,polyvinyl acetate,povidone,propyl gallate,propylparaben,purified water,sodium citrate,sodium polystyrene sulfonate,starch,sucrose,triacetin,xanthan gum
 Tris Pharma
 narcotics
 pain,cough
@@ -8,7 +8,7 @@ benzodiazepines,opioids,antihistamines,antipsychotics,anti-anxiety agents,CNS de
 
 Zohydro ER
 hydrocodone
-hydrocodone bitartrate,sugar spheres NF,hypromellose USP,ammonio methacrylate copolymer NF,silicon dioxide NF,talc USP,polyethylene oxide NF,povidone USP,titanium dioxide,FD&C Blue #1,FD&C Red #40,FDA Yellow iron oxide,FD&C Red #3,FDA Black iron oxide,FDA Red iron oxide,gelatin
+sugar spheres NF,hypromellose USP,ammonio methacrylate copolymer NF,silicon dioxide NF,talc USP,polyethylene oxide NF,povidone USP,titanium dioxide,FD&C Blue #1,FD&C Red #40,FDA Yellow iron oxide,FD&C Red #3,FDA Black iron oxide,FDA Red iron oxide,gelatin
 Zogenix
 narcotics
 pain
@@ -24,7 +24,7 @@ inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepines,CNS depressants,
 
 Robaxin
 methocarbamol
-methocarbamol,corn starch,FD&C Yellow 6,hydroxypropyl cellulose,hypromellose,magnesium stearate,polysorbate 20,povidone,propylene glycol,saccharin sodium,sodium lauryl sulfate,sodium starch glycolate,stearic acid,titanium dioxide
+corn starch,FD&C Yellow 6,hydroxypropyl cellulose,hypromellose,magnesium stearate,polysorbate 20,povidone,propylene glycol,saccharin sodium,sodium lauryl sulfate,sodium starch glycolate,stearic acid,titanium dioxide
 Auxilium Pharmaceuticals, Inc.
 CNS depressants
 muscle spasms, pain
@@ -127,24 +127,33 @@ insomnia
 CNS depressants,imipramine,chlorpromazine,rifampin,CYP3A4 inhibitors,ketoconazole,haloperidol
 
 Eskalith
-
-
-
+lithium carbonate
+benzyl alcohol,cetylpyridinium chloride,D&C Yellow No. 10,FD&C Green No. 3,FD&C Red No. 40,FD&C Yellow No. 6,gelatin,lactose,magnesium stearate,povidone,sodium lauryl sulfate,titanium dioxide
+GlaxoSmithKline
+antimanic agents
+manic-depressive disorder
+diuretics,NSAID,cyclooxygenase-2 inhibitors,metronidazole,enalapril,captopril,calcium channel blocking agents,serotonin reuptake inhibitors
 
 Abstral
-
-
-
+fentanyl
+croscarmellose sodium,magnesium stearate,mannitol,silicified microcrystalline cellulose
+Orexo
+narcotics
+pain
+indinavir,nelfinavir,ritonavir,clarithromycin,itraconazole,ketoconazole,nefazodone,saquinavir,telithromycin,aprepitant,diltiazem,erythromycin,fluconazole,verapamil,cimetidine,CYP3A4 inducers
 
 Flovent HFA
-
-
-
+fluticasone propionate aerosol
+propellant HFA-134a
+GlaxoSmithKline
+corticosteroids
+asthma
+inhibitors of cytochrome P450 3A4,ritonavir,ketoconazole
 
 Methadose
 methadone hydrochloride
 dibasic calcium phosphate,microcrystalline cellulose,magnesium stearate,colloidal silicon dioxide,pregelatinized starch,stearic acid
 Mallinckrodt Pharmaceuticals
-opioid analgesics
+narcotics
 opiod addiction
 cytochrome P450 inducers,cytochrome P450 inhibitors,CNS depressants,MAO inhibitors,alcohol,barbiturates,benzodiazepines,buprenorphine,carbamazepine,chloral hydrate,chlormethiazole,cimetidine,urine alkalisers
