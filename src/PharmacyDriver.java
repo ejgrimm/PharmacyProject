@@ -46,14 +46,24 @@ public class PharmacyDriver {
     private static void fillPatientsArray(String[] values) {
         ArrayList<Patient> patients = new ArrayList<Patient>();
         ArrayList<DrugLine> drugLine = new ArrayList<DrugLine>();
-        String[] dlElements = values[6].split(",");
-        drugLine.add(new DrugLine(dlElements[1], dlElements[2], Integer.parseInt(dlElements[3]), Integer.parseInt(dlElements[4])));
-        if (values[0].equals("inPatient")) {                                        
-            patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], drugLine, Integer.parseInt(values[7])));
+        if (values[6].equals("None")) {
+           if(values[0].equals("inPatient")) {
+               patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], Integer.parseInt(values[7])));
+           }
+                
         }
         else {
-            patients.add(new OutPatient(values[1], values[2], values[3], values[4], values[5], drugLine, values[7]));
+            String[] dlElements = values[6].split(",");
+            drugLine.add(new DrugLine(dlElements[1], dlElements[2], Integer.parseInt(dlElements[3]), Integer.parseInt(dlElements[4])));
+            if (values[0].equals("inPatient")) {                                        
+                patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], drugLine, Integer.parseInt(values[7])));
+            }
+            else {
+                patients.add(new OutPatient(values[1], values[2], values[3], values[4], values[5], drugLine, values[7]));
+            }
         }
+        
+
     }
 }
 

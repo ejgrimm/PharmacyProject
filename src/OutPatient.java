@@ -10,6 +10,8 @@ public class OutPatient extends Patient {
 	public OutPatient() {
 		super();
 	}
+	
+	// with prescriptions
 
 	public OutPatient(String name, String ssn, String address, String phone, String insurance,
 			ArrayList<DrugLine> currentPrescription, String lastVisit) {
@@ -17,7 +19,13 @@ public class OutPatient extends Patient {
 		this.lastVisit = lastVisit;
 		setType("OutPatient");
 	}
-
+	
+	// no prescriptions yet
+    public OutPatient(String name, String ssn, String address, String phone, String insurance, String lastVisit) {
+        super(name, ssn, address, phone, insurance);
+        this.lastVisit = lastVisit;
+        setType("OutPatient");
+    }
 	//getters and setters
 	public String getLastVisit() {
 		return lastVisit;

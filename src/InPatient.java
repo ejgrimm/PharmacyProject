@@ -10,13 +10,21 @@ public class InPatient extends Patient {
 	public InPatient() {
 		super();
 	}
-
+	
+	// with existing prescriptions
 	public InPatient(String name, String ssn, String address, String phone, String insurance,
 			ArrayList<DrugLine> currentPrescription, int bedNum) {
 		super(name, ssn, address, phone, insurance, currentPrescription);
 		this.bedNum = bedNum;
 		setType("InPatient");
 	}
+	
+	// no prescriptions yet
+    public InPatient(String name, String ssn, String address, String phone, String insurance, int bedNum) {
+        super(name, ssn, address, phone, insurance);
+        this.bedNum = bedNum;
+        setType("InPatient");
+    }	
 
 	//getters and setters
 	public int getBedNum() {

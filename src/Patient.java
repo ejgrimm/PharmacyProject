@@ -20,6 +20,7 @@ public  abstract class Patient extends Person {
 	public Patient(String name, String ssn, String address, String phone, String insurance) {
 	    super(name, ssn, address, phone);
         this.insurance = insurance;
+        this.currentPrescription = new ArrayList<DrugLine>();
 	}
 
 	public Patient() {
