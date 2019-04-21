@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Drug {
 
-	//datamembers
+	//data members
 	private String name;
 	private String chemicalName;
 	private ArrayList<String> ingredients;
@@ -82,9 +82,5 @@ public class Drug {
 	public void setListOfContraindications(ArrayList<String> listOfContraindications) {
 		this.listOfContraindications = listOfContraindications;
 	}
-	
-	// other methods
-	public Drug getDrug(String name) {
-	    
-	}
+
 }
