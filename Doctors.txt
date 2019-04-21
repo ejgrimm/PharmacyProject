@@ -13,7 +13,7 @@ Dr. Margaret "Maggie" Pierce;523-23-5235;325 Ninth Ave, Seattle, WA 98104;206-74
 Dr. Arizona Robbins;698-75-1268;200 N Lakemont Ave, Winter Park, FL 32792;407-646-7035;Pediatric Surgery
 Dr. Amelia Shepherd;798-65-1236;83 W Miller St, Orlando, FL, 32806;321-843-9895;Plastic Surgery
 Dr. Calliope "Callie" Torres;369-25-8741;13535 Nemours Pkwy, Orlando, FL 32827;407-567-4050;Orthopedic Surgery
-Dr. April Kepner;269-69-5469;13535 Nemours Pkwy, Orlando, FL 32827;407-567-4070;Trauma Surgy
+Dr. April Kepner;269-69-5469;13535 Nemours Pkwy, Orlando, FL 32827;407-567-4070;Trauma Surgery
 Dr. Alexandra "Lexie" Grey;274-91-8768;13535 Nemours Pkwy, Orlando, FL 32827;407-567-4085;General Surgery
 Dr. Christina Yang;574-23-7838;13535 Nemours Pkwy, Orlando, FL 32827;407-567-4085;Pain Management
 Dr. George O'Malley;418-62-9874;601 E Rollins St, Orlando, FL 32803;407-303-6615;Psychiatry
