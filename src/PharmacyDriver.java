@@ -11,6 +11,7 @@ public class PharmacyDriver {
     private static ArrayList<Pharmacist> pharmacists;
     private static ArrayList<Nurse> nurses;
     private static ArrayList<Drug> drugs;
+    private static ArrayList<Prescription> prescriptions;
     
 
     public static void main(String[] args) {     
@@ -49,7 +50,6 @@ public class PharmacyDriver {
             while (!scan.nextLine().equals(""));
             for (int i = 0; i < 7; i++) {
                 currentLine = scan.nextLine(); 
-                System.out.println(currentLine);
                 fillDrugsArrayList(currentLine, i, drugIndex);
             }
             drugIndex++;
