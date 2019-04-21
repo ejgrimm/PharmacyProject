@@ -8,11 +8,18 @@ public  abstract class Patient extends Person {
 	private ArrayList<DrugLine> currentPrescription;
 	
 	//constructors
+	// patient with existing prescriptions
 	public Patient(String name, String ssn, String address, String phone, String insurance,
 			ArrayList<DrugLine> currentPrescription) {
 		super(name, ssn, address, phone);
 		this.insurance = insurance;
 		this.currentPrescription = currentPrescription;
+	}
+	
+	// patient starting without prescriptions
+	public Patient(String name, String ssn, String address, String phone, String insurance) {
+	    super(name, ssn, address, phone);
+        this.insurance = insurance;
 	}
 
 	public Patient() {
