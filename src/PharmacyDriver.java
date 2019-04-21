@@ -9,20 +9,29 @@ public class PharmacyDriver {
     private static ArrayList<Patient> patients;
     private static ArrayList<Doctor> doctors;
     private static ArrayList<Pharmacist> pharmacists;
+    private static ArrayList<Nurse> nurses;
 
     public static void main(String[] args) {     
         
         // putting methods to instantiate objects from files in each Class
         // create an arraylist of Class Objects from reading every file in driver
         
-        readFile("Patients.txt");
-        readFile("Doctors.txt");
-        readFile("Pharmacist.txt");
-        //readFile("Drugs.txt");
-        //readFile("Prescriptions.txt");
+        createPharmacyObjects();
+
        
         
     }
+    
+    // helper methods
+    private static void createPharmacyObjects() {
+        readFile("Patients.txt");
+        readFile("Doctors.txt");
+        readFile("Pharmacists.txt");
+       
+        //readFile("Drugs.txt");
+        //readFile("Prescriptions.txt");
+    }
+    
     private static void readFile(String fileName) {
         File file = new File(fileName);
         Scanner scan = null;
@@ -44,6 +53,9 @@ public class PharmacyDriver {
             }
             else if (fileName.contains("Pharmacist")) {
                 fillPharmacistsArray(values);
+            }
+            else if (fileName.contains("Nurse")) {
+                fillNursesArray(values);
             }
         }
         scan.close();
@@ -84,6 +96,10 @@ public class PharmacyDriver {
         pharmacists = new ArrayList<Pharmacist>();
         pharmacists.add(new Pharmacist(values[0], values[1], values[2], values[3], values[4]));
         return pharmacists;
+    }
+    
+    private static ArrayList<Nurse> fillNursesArray(String[] values) {
+        return nurses;
     }
 }
 
