@@ -8,6 +8,7 @@ public class PharmacyDriver {
     // data members
     private static ArrayList<Patient> patients;
     private static ArrayList<Doctor> doctors;
+    private static ArrayList<Pharmacist> pharmacists;
 
     public static void main(String[] args) {     
         
@@ -16,8 +17,8 @@ public class PharmacyDriver {
         
         readFile("Patients.txt");
         readFile("Doctors.txt");
+        readFile("Pharmacist.txt");
         //readFile("Drugs.txt");
-        //readFile("Pharmacist.txt");
         //readFile("Prescriptions.txt");
        
         
@@ -40,6 +41,9 @@ public class PharmacyDriver {
             }
             else if (fileName.contains("Doctor")) {
                 fillDoctorsArray(values);
+            }
+            else if (fileName.contains("Pharmacist")) {
+                fillPharmacistsArray(values);
             }
         }
         scan.close();
@@ -74,6 +78,12 @@ public class PharmacyDriver {
         doctors = new ArrayList<Doctor>();
         doctors.add(new Doctor(values[0], values[1], values[2], values[3], values[4]));
         return doctors;
+    }
+    
+    private static ArrayList<Pharmacist> fillPharmacistsArray(String[] values) {
+        pharmacists = new ArrayList<Pharmacist>();
+        pharmacists.add(new Pharmacist(values[0], values[1], values[2], values[3], values[4]));
+        return pharmacists;
     }
 }
 
