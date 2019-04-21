@@ -31,14 +31,10 @@ public class PharmacyDriver {
         
         while (scan.hasNextLine()) {
             String currentLine = scan.nextLine();
-            String[] values = currentLine.split(";");
+            String[] values = currentLine.split(";");                        
             if (fileName.contains("Patient")) {
-                ArrayList<Patient> patients = new ArrayList<Patient>();
-                if (values[0].equals("inPatient")) {
-                    ArrayList<DrugLine> drugLine = new ArrayList<DrugLine>();
-                    // NONFUNCTIONAL - TO FIX drugLine.add(new DrugLine(Drug(can't be a string!!), dlElements[2], Integer.parseInt(dlElements[3]), Integer.parseInt(dlElements[4])));
-                    patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], drugLine, Integer.parseInt(values[7])));
-                }
+                fillPatientsArray(values);
+
             }
             else if (fileName.contains("Doctor")) {
                 
@@ -47,5 +43,17 @@ public class PharmacyDriver {
         scan.close();
     }
     
+    private static void fillPatientsArray(String[] values) {
+        ArrayList<Patient> patients = new ArrayList<Patient>();
+        ArrayList<DrugLine> drugLine = new ArrayList<DrugLine>();
+        String[] dlElements = values[6].split(",");
+        drugLine.add(new DrugLine(dlElements[1], dlElements[2], Integer.parseInt(dlElements[3]), Integer.parseInt(dlElements[4])));
+        if (values[0].equals("inPatient")) {                                        
+            patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], drugLine, Integer.parseInt(values[7])));
+        }
+        else {
+            patients.add(new OutPatient(values[1], values[2], values[3], values[4], values[5], drugLine, values[7]));
+        }
+    }
 }
 

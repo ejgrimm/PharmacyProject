@@ -83,6 +83,8 @@ public class Drug {
 		this.listOfContraindications = listOfContraindications;
 	}
 	
-	
-	
+	// other methods
+	public Drug getDrug(String name) {
+	    
+	}
 }

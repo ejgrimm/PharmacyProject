@@ -2,7 +2,7 @@
 public class DrugLine {
 
 	//data members
-	private Drug drug;
+	private String drug;
 	private String dosage;
 	private int remainingRefills;
 	private int timesRefilled;
@@ -13,7 +13,7 @@ public class DrugLine {
 		timesRefilled = 0;
 	}
 
-	public DrugLine(Drug d, String ds, int r, int t) {
+	public DrugLine(String d, String ds, int r, int t) {
 		drug = d;
 		dosage = ds;
 		remainingRefills = r;
@@ -21,11 +21,11 @@ public class DrugLine {
 	}
 
 	//getters and setters
-	public Drug getDrug() {
+	public String getDrug() {
 		return drug;
 	}
 
-	public void setDrug(Drug drug) {
+	public void setDrug(String drug) {
 		this.drug = drug;
 	}
 
