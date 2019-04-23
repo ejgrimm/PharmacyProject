@@ -5,6 +5,7 @@ Tris Pharma
 narcotics
 pain,cough
 benzodiazepines,opioids,antihistamines,antipsychotics,anti-anxiety agents,CNS depressants
+false
 
 Zohydro ER
 hydrocodone
@@ -13,6 +14,7 @@ Zogenix
 narcotics
 pain
 alcohol,inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepines,CNS depressants,serotonergic drugs,monoamine oxidase inhibitors,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+true
 
 OxyContin
 oxycodone
@@ -21,6 +23,7 @@ Purdue Pharma
 narcotics
 pain
 inhibitors of CYP3A4 and CYP2D6,CYP3A4 inducers,benzodiazepines,CNS depressants,serotonergic drugs,monoamine oxidase inhibitorss,opioid analgesics,muscle relaxants,diuretics,anticholinergic drugs
+true
 
 Robaxin
 methocarbamol
@@ -29,6 +32,7 @@ Auxilium Pharmaceuticals, Inc.
 CNS depressants
 muscle spasms, pain
 pyridostigmine bromide
+false
 
 Lantus
 insulin glargine
@@ -37,6 +41,7 @@ Sanofi
 hormones
 diabetes mellitus
 atypical antipsychotics,corticosteroids,danazols,diuretics,estrogen,glucagon,isoniazid,niacin,contraceptives,phenothiazine,progestogen,protease inhibitors,somatropin,sympathomimetic agents,thyroid hormones
+false
 
 Xanax
 alprazolam
@@ -45,6 +50,7 @@ Pfizer
 benzodiazepines
 anxiety,panic disorders
 tramadol,subutex,oxycodone
+false
 
 Ultram
 tramadol hydrochloride
@@ -53,6 +59,7 @@ Johnson & Johnson
 narcotics
 pain
 MAO inhibitors,SSRIs,TCAs,CNS depressants,CYP2D6 and CYP3A4 inhibitors
+false
 
 Prozac
 fluoxetine hydrochloride
@@ -61,6 +68,7 @@ Eli Lilly
 SSRIs
 depression,obsessive-compulsive disorder,bulimia nervosa,panic disorder
 MAO inhibitors,serotonergic drugs,olanzapines,CYP3A4 inhibitors,anticonvulsants,antipsychotics,benzodiazepines,TCAs,CYP2D6 inducers
+false
 
 Ventolin HFA
 albuterol sulfate
@@ -69,6 +77,7 @@ GlaxoSmithKline
 bronchodilators
 asthma,chronic obstructive pulmonary disease,wheezing,shortness of breath
 beta blockers,non-potassium-sparing diuretics,digoxins
+false
 
 Sectral
 acebutolol hydrochloride
@@ -77,6 +86,7 @@ Sanofi
 beta blockers
 high blood pressure,arrhythmia
 catecholamine-depleting drugs,nonsteroidal anti-inflammatory drugs,adrenergic antagonists,adrenergic stimulants
+false
 
 Yaz
 drospirenone,ethinyl estradiol
@@ -85,6 +95,7 @@ Bayer
 contraceptives
 birth control
 antacids,antibiotics,anticonvulsants,antifungals,cholesterol lowering agents,HCV protease inhibitors,HIV protease inhibitors,non-nucleoside reverse transcriptase inhibitors,aedatives,hypnotics,analgesics,antihistamines,antimigraine preparations,phenylbutazone preparations,vitamin E
+false
 
 Adderall
 dextroamphetamine saccharate, amphetamine aspartate, dextroamphetamine sulfate,amphetamine sulfate
@@ -93,6 +104,7 @@ Teva
 stimulants
 ADHD,narcolepsy
 zoloft,wellbutrin,tramadol,prozac,lexapro,cymbalta,MAO inhibitors,serotonergic drugs
+false
 
 Amoxil
 amoxicillin
@@ -101,6 +113,7 @@ GlaxoSmithKline
 antibiotics
 infection
 acidifying agents,adrenergic blockers,alkalinizing agents,tricyclic antidepressants,CYP2D6 inhibitors,serotonergic drugs,MAO inhibitors
+false
 
 Humalog
 insulin lispro
@@ -109,6 +122,7 @@ Eli Lilly
 hormones
 diabetes mellitus
 atypical antipsychotics,corticosteroids,danazols,diuretics,estrogen,glucagon,isoniazid,niacin,contraceptives,phenothiazine,progestogen,protease inhibitors,somatropin,sympathomimetic agents,thyroid hormones
+false
 
 Risperdal
 risperidone
@@ -117,6 +131,7 @@ Janssen Pharmaceuticals
 antipsychotics
 schizophrenia,bipolar disorder,irritability 
 antidepressants,heartburn drugs,CYP2D6 inhibitors,clozapine,digoxin,valproate,lithium
+false
 
 Ambien
 zolpidem tartrate
@@ -125,6 +140,7 @@ Sanofi
 sedatives
 insomnia
 CNS depressants,imipramine,chlorpromazine,rifampin,CYP3A4 inhibitors,ketoconazole,haloperidol
+false
 
 Eskalith
 lithium carbonate
@@ -133,6 +149,7 @@ GlaxoSmithKline
 antimanic agents
 manic-depressive disorder
 diuretics,NSAID,cyclooxygenase-2 inhibitors,metronidazole,enalapril,captopril,calcium channel blocking agents,serotonin reuptake inhibitors
+false
 
 Abstral
 fentanyl
@@ -141,6 +158,7 @@ Orexo
 narcotics
 pain
 indinavir,nelfinavir,ritonavir,clarithromycin,itraconazole,ketoconazole,nefazodone,saquinavir,telithromycin,aprepitant,diltiazem,erythromycin,fluconazole,verapamil,cimetidine,CYP3A4 inducers
+true
 
 Flovent HFA
 fluticasone propionate aerosol
@@ -149,6 +167,7 @@ GlaxoSmithKline
 corticosteroids
 asthma
 inhibitors of cytochrome P450 3A4,ritonavir,ketoconazole
+false
 
 Methadose
 methadone hydrochloride
@@ -157,3 +176,4 @@ Mallinckrodt Pharmaceuticals
 narcotics
 opiod addiction
 cytochrome P450 inducers,cytochrome P450 inhibitors,CNS depressants,MAO inhibitors,alcohol,barbiturates,benzodiazepines,buprenorphine,carbamazepine,chloral hydrate,chlormethiazole,cimetidine,urine alkalisers
+true
