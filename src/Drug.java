@@ -85,4 +85,12 @@ public class Drug {
 		this.listOfContraindications = listOfContraindications;
 	}
 
+	public boolean isWatchlist() {
+		return watchlist;
+	}
+
+	public void setWatchlist(boolean watchlist) {
+		this.watchlist = watchlist;
+	}
+
 }
