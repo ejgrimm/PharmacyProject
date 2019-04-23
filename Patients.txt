@@ -1,4 +1,6 @@
 inPatient;Nikola Pavlovic;983-05-1234;1407 Fairbanks, winter park, 32789, Florida;407-760-8888;Blue Cross;Lantis,10mg,4,8;357
+DrugLine:
+
 inPatient;Sara Vicanovic;783-10-1532;2647 Fairbanks, winter park, 32789, Florida;407-762-6789;Blue Cross;Yaz,4mg,10,2;257
 inPatient;Dajana Kocic;846-18-8549;1223 Fairbanks, winter park, 32789, Florida;407-285-9544;aetna;Yaz,4mg,10,2;369
 inPatient;Segej Banjac;478-43-7657;7892 Fairbanks, winter park, 32789, Florida;407-941-2368;aetna;None;152

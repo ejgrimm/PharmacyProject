@@ -48,14 +48,14 @@ public class PharmacyDriver {
         while (scan.hasNextLine()) {
             drugs.add(new Drug());
             while (!scan.nextLine().equals(""));
-            for (int i = 0; i < 7; i++) {
+            for (int i = 0; i < 7; i++) { //make * after add watchlist
                 currentLine = scan.nextLine(); 
                 fillDrugsArrayList(currentLine, i, drugIndex);
             }
             drugIndex++;
         }
     }
-
+    // add watchlist boolean -extra line at bottom of drug
     private static ArrayList<Drug> fillDrugsArrayList(String currentLine, int i, int drugIndex) {
         String[] elements;
         int j;
