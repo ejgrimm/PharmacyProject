@@ -10,13 +10,14 @@ public class Drug {
 	private String type;
 	private ArrayList<String> listOfConditions;
 	private ArrayList<String> listOfContraindications;
+	private boolean watchlist;
 	
 	//constructors
 	public Drug() {
 		
 	}
 	
-	public Drug(String n, String cN, ArrayList<String> i, String mC, String t, ArrayList<String> lC, ArrayList<String> lCD) {
+	public Drug(String n, String cN, ArrayList<String> i, String mC, String t, ArrayList<String> lC, ArrayList<String> lCD, boolean w) {
 		name = n;
 		chemicalName = cN;
 		ingredients = i;
@@ -24,6 +25,7 @@ public class Drug {
 		type = t;
 		listOfConditions = lC;
 		listOfContraindications = lCD;
+		watchlist = w;
 	}
 
 	//getters and setters
