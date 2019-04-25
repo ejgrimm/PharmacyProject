@@ -47,8 +47,9 @@ public class PharmacyDriver {
         int drugIndex = 0;
         while (scan.hasNextLine()) {
             drugs.add(new Drug());
+            System.out.println(drugIndex);
             while (!scan.nextLine().equals(""));
-            for (int i = 0; i < 7; i++) { //make * after add watchlist
+            for (int i = 0; i < 8; i++) {
                 currentLine = scan.nextLine(); 
                 fillDrugsArrayList(currentLine, i, drugIndex);
             }
@@ -87,13 +88,21 @@ public class PharmacyDriver {
             }
             drugs.get(drugIndex).setListOfConditions(conditions);
         }
-        else if(i==6) {
+        else if (i==6) {
             elements = currentLine.split(",");
             ArrayList<String> contraindications = new ArrayList<String>();
             for (j = 0; j < elements.length; j++) {
                 contraindications.add(elements[j]);
             }
             drugs.get(drugIndex).setListOfContraindications(contraindications);            
+        }
+        else if (i==7) {
+            if (currentLine.equals("false")) {
+                drugs.get(drugIndex).setWatchlist(false);
+            }
+            else {
+                drugs.get(drugIndex).setWatchlist(true);
+            }
         }
         return drugs;
     }
