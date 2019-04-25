@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Drug {
 
-	//data members
+    //data members
 	private String name;
 	private String chemicalName;
 	private ArrayList<String> ingredients;
@@ -92,5 +92,11 @@ public class Drug {
 	public void setWatchlist(boolean watchlist) {
 		this.watchlist = watchlist;
 	}
-
+    @Override
+    public String toString() {
+        return "Drug [name=" + name + ", chemicalName=" + chemicalName + ", ingredients=" + ingredients
+                + ", manufacturingCompany=" + manufacturingCompany + ", type=" + type + ", listOfConditions="
+                + listOfConditions + ", listOfContraindications=" + listOfContraindications + ", watchlist=" + watchlist
+                + "]";
+    }
 }
