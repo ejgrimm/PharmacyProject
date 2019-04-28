@@ -21,6 +21,8 @@ public class PharmacyDriver {
 
         createPharmacyObjects();
         System.out.println(drugs.toString());
+        System.out.println(patients.toString());
+        System.out.println(doctors.toString());
        
         
     }
@@ -51,7 +53,6 @@ public class PharmacyDriver {
         int drugIndex = 0;
         do {
             drugs.add(new Drug());
-            System.out.println(drugIndex);
             
         	while(scan.hasNextLine()) {
         		

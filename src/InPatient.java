@@ -34,12 +34,6 @@ public class InPatient extends Patient {
 	public void setBedNum(int bedNum) {
 		this.bedNum = bedNum;
 	}
-
-    @Override
-    public String toString() {
-        return "InPatient [bedNum=" + bedNum + "]";
-    }
-	
 	
 
 }

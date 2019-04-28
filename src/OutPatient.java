@@ -35,11 +35,5 @@ public class OutPatient extends Patient {
 		this.lastVisit = lastVisit;
 	}
 
-    @Override
-    public String toString() {
-        return "OutPatient [lastVisit=" + lastVisit + "]";
-    }
-	
-	
 	
 }
