@@ -19,12 +19,14 @@ public class PharmacyDriver {
         // putting methods to instantiate objects from files in each Class
         // create an arraylist of Class Objects from reading every file in driver
         createPharmacyObjects();
-        System.out.println(drugs.toString());
-        System.out.println(patients.toString());
-        System.out.println(doctors.toString());
-        System.out.println(pharmacists.toString());
-        System.out.println(nurses.toString());
-        System.out.println(prescriptions.toString());
+//        System.out.println(drugs.toString());
+//        System.out.println(patients.toString());
+//        System.out.println(doctors.toString());
+//        System.out.println(pharmacists.toString());
+//        System.out.println(nurses.toString());
+//        System.out.println(prescriptions.toString());
+        
+        pharmacists.get(0).fillPrescription(prescriptions.get(0), nurses.get(0), drugs, patients, doctors);
 
 
     }
