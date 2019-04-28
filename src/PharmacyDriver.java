@@ -246,5 +246,57 @@ public class PharmacyDriver {
         nurses.add(new Nurse(values[0], values[1], values[2], values[3], values[4], values[5]));
         return nurses;
     }
+    
+    private static void readPrescriptionsFile(String fileName) {
+    	File file = new File(fileName);
+        Scanner scan = null;
+        String[] values;
+
+        try {
+            scan = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        
+        while(scan.hasNextLine()) {
+        	ArrayList<DrugLine> drugLines = new ArrayList<DrugLine>();
+        	
+        	String currentLine = scan.nextLine();
+        	values = currentLine.split(";");
+        		
+        	
+        	//test
+        	//System.out.println(currentLine);
+    		for(int i = 0; i<values.length;i++) {
+    			System.out.println(values[i]);
+    		}
+        	
+        	
+        	while(scan.nextLine().equals("DRUGLINE")) {
+            	
+        		String drugLine = scan.nextLine();
+        		String[] values2 = drugLine.split(";");
+        		
+        		// test
+        		for(int i = 0; i<values2.length;i++) {
+        			System.out.println(values2[i]);
+        		}
+        		drugLines.add(new DrugLine(values2[0],values2[1],Integer.parseInt(values2[2]),Integer.parseInt(values2[3])));
+        	}
+        	
+        	System.out.println(drugLines);
+        	
+        	ArrayList<DrugLine> test = new ArrayList<DrugLine>();
+        	test.add(new DrugLine("fhell","jeehl",2,5));
+        	
+        	//prescriptions.add(new Prescription("af","12321","23]",test,"213"));
+        	
+        	System.out.println();
+        	
+        		
+        	
+        }
+        
+    }
 }
 
