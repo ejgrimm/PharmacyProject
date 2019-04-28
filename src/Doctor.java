@@ -64,7 +64,7 @@ public class Doctor extends Person {
 
     }
     
-    public String contactDoctor(Doctor d) {
+    public String contactDoctor() {
     	return "Doctor's name: " + getName() + "\n" + "Doctor's phone number: " + getPhone() + "\n" + "Doctor's address: " + getAddress();
     }
 
