@@ -21,6 +21,8 @@ public class PharmacyDriver {
 
         createPharmacyObjects();
         System.out.println(drugs.toString());
+       
+        
     }
 
     // helper methods
@@ -154,23 +156,23 @@ public class PharmacyDriver {
     private static ArrayList<Patient> fillPatientsArray(String[] values) {
         patients = new ArrayList<Patient>();
         ArrayList<DrugLine> drugLine = new ArrayList<DrugLine>();
-        if (values[6].equals("None")) {
+        if (values[7].equals("None")) {
             if(values[0].equals("inPatient")) {
-                patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], Integer.parseInt(values[7])));
+                patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], Integer.parseInt(values[6])));
             }
             else {
-                patients.add(new OutPatient(values[1], values[2], values[3], values[4], values[5], drugLine, values[7]));
+                patients.add(new OutPatient(values[1], values[2], values[3], values[4], values[5], values[6]));
             }
 
         }
         else {
-            String[] dlElements = values[6].split(",");
+            String[] dlElements = values[7].split(",");
             drugLine.add(new DrugLine(dlElements[0], dlElements[1], Integer.parseInt(dlElements[2]), Integer.parseInt(dlElements[3])));
             if (values[0].equals("inPatient")) {                                        
-                patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], drugLine, Integer.parseInt(values[7])));
+                patients.add(new InPatient(values[1], values[2], values[3], values[4], values[5], Integer.parseInt(values[6]), drugLine));
             }
             else {
-                patients.add(new OutPatient(values[1], values[2], values[3], values[4], values[5], drugLine, values[7]));
+                patients.add(new OutPatient(values[1], values[2], values[3], values[4], values[5], values[6], drugLine));
             }
         }
         return patients;

@@ -13,7 +13,7 @@ public class InPatient extends Patient {
 	
 	// with existing prescriptions
 	public InPatient(String name, String ssn, String address, String phone, String insurance,
-			ArrayList<DrugLine> currentPrescription, int bedNum) {
+			int bedNum, ArrayList<DrugLine> currentPrescription) {
 		super(name, ssn, address, phone, insurance, currentPrescription);
 		this.bedNum = bedNum;
 		setType("InPatient");
@@ -34,5 +34,12 @@ public class InPatient extends Patient {
 	public void setBedNum(int bedNum) {
 		this.bedNum = bedNum;
 	}
+
+    @Override
+    public String toString() {
+        return "InPatient [bedNum=" + bedNum + "]";
+    }
+	
+	
 
 }

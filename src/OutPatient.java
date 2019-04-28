@@ -14,7 +14,7 @@ public class OutPatient extends Patient {
 	// with prescriptions
 
 	public OutPatient(String name, String ssn, String address, String phone, String insurance,
-			ArrayList<DrugLine> currentPrescription, String lastVisit) {
+			String lastVisit, ArrayList<DrugLine> currentPrescription) {
 		super(name, ssn, address, phone, insurance, currentPrescription);
 		this.lastVisit = lastVisit;
 		setType("OutPatient");
@@ -34,5 +34,12 @@ public class OutPatient extends Patient {
 	public void setLastVisit(String lastVisit) {
 		this.lastVisit = lastVisit;
 	}
+
+    @Override
+    public String toString() {
+        return "OutPatient [lastVisit=" + lastVisit + "]";
+    }
+	
+	
 	
 }
