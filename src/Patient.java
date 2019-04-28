@@ -58,4 +58,12 @@ public  abstract class Patient extends Person {
 	    this.currentPrescription.add(dl);
 	}
 
+    @Override
+    public String toString() {
+        return "Patient [insurance=" + insurance + ", type=" + type + ", currentPrescription=" + currentPrescription
+                + ", toString()=" + super.toString() + "]";
+    }
+	
+	
+
 }

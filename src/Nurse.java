@@ -34,4 +34,11 @@ public class Nurse extends Person {
         this.staffID = staffID;
     }
 
+    @Override
+    public String toString() {
+        return "Nurse [department=" + department + ", staffID=" + staffID + ", toString()=" + super.toString() + "]";
+    }
+    
+    
+
 }

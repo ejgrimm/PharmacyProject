@@ -135,9 +135,11 @@ public class PharmacyDriver {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        
+        String currentLine;
 
-        while (scan.hasNextLine()) {
-            String currentLine = scan.nextLine();
+        do {
+            currentLine = scan.nextLine();
             String[] values = currentLine.split(";");                        
             if (fileName.contains("Patient")) {
                 fillPatientsArray(values);
@@ -150,8 +152,9 @@ public class PharmacyDriver {
             }
             else if (fileName.contains("Nurse")) {
                 fillNursesArray(values);
-            }
-        }
+            } 
+        } while (scan.hasNextLine());
+        
         scan.close();
     }
     private static ArrayList<Patient> fillPatientsArray(String[] values) {

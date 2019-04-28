@@ -67,6 +67,12 @@ public class Doctor extends Person {
     // adds new Drug element for ArrayList for every prescription by doctor
     public void addToWatchlist(Drug d) {
         this.watchlist.add(d);
+    }
+
+    @Override
+    public String toString() {
+        return "Doctor [specialization=" + specialization + ", watchlist=" + watchlist + "]";
     }    
+    
     
 }
