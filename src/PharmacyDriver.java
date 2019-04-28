@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class PharmacyDriver {
 
-    // data members
+    // global data members
     private static ArrayList<Patient> patients;
     private static ArrayList<Doctor> doctors;
     private static ArrayList<Pharmacist> pharmacists;
@@ -26,14 +26,20 @@ public class PharmacyDriver {
 //        System.out.println(nurses.toString());
 //        System.out.println(prescriptions.toString());
         
-        pharmacists.get(0).fillPrescription(prescriptions.get(0), nurses.get(0), drugs, patients, doctors);
+        //pharmacists.get(0).fillPrescription(prescriptions.get(0), nurses.get(0), drugs, patients, doctors);
+        
+        for(int i = 0;i<patients.size();i++) {
+        	System.out.println(patients.get(i).getCurrentPrescription());
+        }
 
 
     }
 
     // helper methods
     private static void createPharmacyObjects() {
-        readPatientFile("Patients.txt");
+    	
+        // calls all methods that read files and initialize objects in arraylists
+    	readPatientFile("Patients.txt");
         readDoctorFile("Doctors.txt");
         readPharmacistFile("Pharmacists.txt");
         readDrugFile("Drugs.txt");
@@ -42,9 +48,12 @@ public class PharmacyDriver {
     }
 
     private static void readDrugFile(String fileName) {
+    	
+    	// initialize file and scanner
         File file = new File(fileName);
         Scanner scan = null;
 
+        // instantiate drugs arrayList
         drugs = new ArrayList<Drug>();
         String currentLine;
 
@@ -55,12 +64,18 @@ public class PharmacyDriver {
             e.printStackTrace();
         } 
 
+        // drugs is a structured file where each drug has 8 lines of information
+        
         int drugIndex = 0;
         do {
             drugs.add(new Drug());
 
+            // gets current line and will send it to fillDrugsArrayList along with the i so that we can keep track
+        	// of which line that we are on in the drug, and a drugIndex variable to keep track of the drug in order
+        	// to add it to the arrayList
             while(scan.hasNextLine()) {        		
-                currentLine=scan.nextLine();
+                
+            	currentLine=scan.nextLine();
                 if(currentLine.equals(""))
                     break;
 
@@ -70,14 +85,16 @@ public class PharmacyDriver {
                 }           
                 drugIndex++;
             }                                   
-        }while (scan.hasNextLine());
+        } while (scan.hasNextLine());
     }
-
-
-    // add watchlist boolean -extra line at bottom of drug
+    
+    // this method initializes drugs in the drugs array
+    // this method receives an i variable which corresponds to a specific line in the drug file
+    // each line is a data member of a drug object and all of them have to be initialized differently
+    // each if else case sets a different data member in the drug object
     private static ArrayList<Drug> fillDrugsArrayList(String currentLine, int i, int drugIndex) {
         String[] elements;
-        int j;
+        int j; // used for loops (for loops)
         if (i==0) {
             drugs.get(drugIndex).setName(currentLine);
         }
@@ -251,7 +268,9 @@ public class PharmacyDriver {
 
 
     private static void readPrescriptionsFile(String fileName) {
-        File file = new File(fileName);
+    	
+        // initialize variables to be used in this method
+    	File file = new File(fileName);
         Scanner scan = null;
         String[] values;
         String currentLine;
@@ -263,23 +282,26 @@ public class PharmacyDriver {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
+        
+        // the outer while loop will get the prescription line and get its contents
+        // this will be used later to add it to a prescription object
         while(scan.hasNextLine()) {
             ArrayList<DrugLine> drugLines = new ArrayList<DrugLine>();
-
             currentLine = scan.nextLine();
             values = currentLine.split(";");
 
-
+            // the inner while loop will get each of the druglines in a prescription
+            // the contents are added to a DrugLine arraylist
             while(scan.nextLine().equals("DRUGLINE")) {           	
                 drugLine = scan.nextLine();
                 String[] values2 = drugLine.split(";");
                 drugLines.add(new DrugLine(values2[0],values2[1],Integer.parseInt(values2[2]),Integer.parseInt(values2[3])));
             }
+            
+            // adds a prescription using the prescription information and the druglines
             prescriptions.add(new Prescription(values[0],values[1],values[2],drugLines,values[3]));	
         }        
     }
 
 
 }
-
