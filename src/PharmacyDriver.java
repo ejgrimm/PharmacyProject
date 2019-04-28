@@ -18,13 +18,12 @@ public class PharmacyDriver {
 
         // putting methods to instantiate objects from files in each Class
         // create an arraylist of Class Objects from reading every file in driver
-
-        createPharmacyObjects();
-        System.out.println(drugs.toString());
-        System.out.println(patients.toString());
-        System.out.println(doctors.toString());
-        System.out.println(pharmacists.toString());
-        System.out.println(nurses.toString());
+    	createPharmacyObjects();
+//        System.out.println(drugs.toString());
+//        System.out.println(patients.toString());
+//        System.out.println(doctors.toString());
+//        System.out.println(pharmacists.toString());
+//        System.out.println(nurses.toString());
        
         
     }
@@ -36,7 +35,7 @@ public class PharmacyDriver {
         readPharmacistFile("Pharmacists.txt");
         readDrugFile("Drugs.txt");
         readNurseFile("Nurses.txt");
-        //readFile("Prescriptions.txt");
+        readPrescriptionsFile("Prescriptions.txt");
     }
     
     private static void readDrugFile(String fileName) {
@@ -289,7 +288,7 @@ public class PharmacyDriver {
         	ArrayList<DrugLine> test = new ArrayList<DrugLine>();
         	test.add(new DrugLine("fhell","jeehl",2,5));
         	
-        	//prescriptions.add(new Prescription("af","12321","23]",test,"213"));
+        	prescriptions.add(new Prescription("af","12321","23]",test,"213"));
         	
         	System.out.println();
         	

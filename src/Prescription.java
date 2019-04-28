@@ -5,13 +5,13 @@ public class Prescription {
 	//data members
 	private String id;
 	private String dateIssued;
-	private Doctor prescribingDoctor;
+	private String prescribingDoctor;
 	private ArrayList<DrugLine> setOfDrugLines;
-	private Patient patient;
+	private String patient;
 	
 	// constructors
-	public Prescription(String id, String dateIssued, Doctor prescribingDoctor, ArrayList<DrugLine> setOfDrugLines,
-		Patient patient) {
+	public Prescription(String id, String dateIssued, String prescribingDoctor, ArrayList<DrugLine> setOfDrugLines,
+		String patient) {
 		super();
 		this.id = id;
 		this.dateIssued = dateIssued;
@@ -41,12 +41,12 @@ public class Prescription {
 	}
 
 
-	public Doctor getPrescribingDoctor() {
+	public String getPrescribingDoctor() {
 		return prescribingDoctor;
 	}
 
 
-	public void setPrescribingDoctor(Doctor prescribingDoctor) {
+	public void setPrescribingDoctor(String prescribingDoctor) {
 		this.prescribingDoctor = prescribingDoctor;
 	}
 
@@ -61,12 +61,12 @@ public class Prescription {
 	}
 
 
-	public Patient getPatient() {
+	public String getPatient() {
 		return patient;
 	}
 
 
-	public void setPatient(Patient patient) {
+	public void setPatient(String patient) {
 		this.patient = patient;
 	}
 	

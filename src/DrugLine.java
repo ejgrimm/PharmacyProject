@@ -58,6 +58,13 @@ public class DrugLine {
 	    this.timesRefilled += 1;
 	    this.remainingRefills -= 1;
 	}
+
+	@Override
+	public String toString() {
+		return "DrugLine [drug=" + drug + ", dosage=" + dosage + ", remainingRefills=" + remainingRefills
+				+ ", timesRefilled=" + timesRefilled + "]";
+	}
+	
 	
 	
 }
