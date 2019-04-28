@@ -1,4 +1,4 @@
-PRESCRIPTION;935542221;03.01.19;Dr. Isobel "Izzie" Stevens;Nikola Pavlovic
+935542221;03.01.19;Dr. Isobel "Izzie" Stevens;Nikola Pavlovic
 DRUGLINE
 Abstral;1mg;1;4
 DRUGLINE

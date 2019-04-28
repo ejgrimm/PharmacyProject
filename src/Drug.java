@@ -85,7 +85,7 @@ public class Drug {
 		this.listOfContraindications = listOfContraindications;
 	}
 
-	public boolean isWatchlist() {
+	public boolean getWatchlist() {
 		return watchlist;
 	}
 
