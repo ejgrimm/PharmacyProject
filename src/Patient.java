@@ -58,10 +58,9 @@ public class Patient extends Person {
 	    this.currentPrescription.add(dl);
 	}
 
-    @Override
+	@Override
     public String toString() {
-        return "Patient [insurance=" + insurance + ", type=" + type + ", currentPrescription=" + currentPrescription
-                + ", toString()=" + super.toString() + "]";
+        return type + super.toString() + ";" + insurance;
     }
 	
 	

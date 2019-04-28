@@ -61,7 +61,7 @@ public class DrugLine {
 
 	@Override
 	public String toString() {
-		return ";" + drug + "," + dosage + "," + remainingRefills	+ "," + timesRefilled;
+		return drug + "," + dosage + "," + remainingRefills	+ "," + timesRefilled;
 	}
 		
 }

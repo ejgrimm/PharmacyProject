@@ -17,14 +17,14 @@ public class OutPatient extends Patient {
 			String lastVisit, ArrayList<DrugLine> currentPrescription) {
 		super(name, ssn, address, phone, insurance, currentPrescription);
 		this.lastVisit = lastVisit;
-		setType("OutPatient");
+		setType("outPatient");
 	}
 	
 	// no prescriptions yet
     public OutPatient(String name, String ssn, String address, String phone, String insurance, String lastVisit) {
         super(name, ssn, address, phone, insurance);
         this.lastVisit = lastVisit;
-        setType("OutPatient");
+        setType("outPatient");
     }
 	//getters and setters
 	public String getLastVisit() {
@@ -37,7 +37,7 @@ public class OutPatient extends Patient {
 
     @Override
     public String toString() {
-        return super.toString() + ";" + lastVisit;
+        return super.toString() + ";" + lastVisit + ";" + getCurrentPrescription();
     }
 
 	
