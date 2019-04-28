@@ -20,7 +20,7 @@ public class PharmacyDriver {
         // create an arraylist of Class Objects from reading every file in driver
 
         createPharmacyObjects();
-
+        System.out.println(drugs.toString());
     }
 
     // helper methods
@@ -35,27 +35,46 @@ public class PharmacyDriver {
     private static void readDrugFile(String fileName) {
         File file = new File(fileName);
         Scanner scan = null;
+        
         drugs = new ArrayList<Drug>();
         String currentLine;
         
         try {
             scan = new Scanner(file);
+            
         } catch (FileNotFoundException e) {
         e.printStackTrace();
         } 
         
         int drugIndex = 0;
-        while (scan.hasNextLine()) {
+        do {
             drugs.add(new Drug());
             System.out.println(drugIndex);
-            while (!scan.nextLine().equals(""));
-            for (int i = 0; i < 8; i++) {
-                currentLine = scan.nextLine(); 
+            
+        	while(scan.hasNextLine()) {
+        		
+        		//if(scan.nextLine().equals(""))
+                	//break;
+        		
+        		currentLine=scan.nextLine();
+        		if(currentLine.equals(""))
+        			break;
+
+            for (int i = 0; i <7; i++) {
+                
                 fillDrugsArrayList(currentLine, i, drugIndex);
+                currentLine = scan.nextLine(); 
             }
+            
             drugIndex++;
-        }
+        	}
+            
+            
+            
+        }while (scan.hasNextLine());
     }
+    
+    
     // add watchlist boolean -extra line at bottom of drug
     private static ArrayList<Drug> fillDrugsArrayList(String currentLine, int i, int drugIndex) {
         String[] elements;
