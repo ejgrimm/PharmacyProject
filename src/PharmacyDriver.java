@@ -24,6 +24,7 @@ public class PharmacyDriver {
         System.out.println(patients.toString());
         System.out.println(doctors.toString());
         System.out.println(pharmacists.toString());
+        System.out.println(nurses.toString());
        
         
     }
@@ -34,6 +35,7 @@ public class PharmacyDriver {
         readDoctorFile("Doctors.txt");
         readPharmacistFile("Pharmacists.txt");
         readDrugFile("Drugs.txt");
+        readNurseFile("Nurses.txt");
         //readFile("Prescriptions.txt");
     }
     
@@ -219,8 +221,28 @@ public class PharmacyDriver {
         return pharmacists;
     }
 
-    private static ArrayList<Nurse> fillNursesArray(String[] values) {
+    private static void readNurseFile(String fileName) {
+        File file = new File(fileName);
+        Scanner scan = null;
+        nurses = new ArrayList<Nurse>();
+        String currentLine;
+
+        try {
+            scan = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }       
+
+        while (scan.hasNextLine()) {
+            currentLine = scan.nextLine();
+            String[] values = currentLine.split(";");                        
+            fillNursesArray(values);
+        } 
         
+        scan.close();
+    }       
+    
+    private static ArrayList<Nurse> fillNursesArray(String[] values) {        
         nurses.add(new Nurse(values[0], values[1], values[2], values[3], values[4], values[5]));
         return nurses;
     }
