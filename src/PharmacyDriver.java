@@ -56,7 +56,7 @@ public class PharmacyDriver {
         		currentLine=scan.nextLine();
         		if(currentLine.equals(""))
         			break;
-
+ 
             for (int i = 0; i <7; i++) {
                 
                 fillDrugsArrayList(currentLine, i, drugIndex);
