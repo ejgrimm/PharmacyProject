@@ -55,6 +55,7 @@ public class Pharmacist extends Person {
             
             Patient patient = patientFinder(rx.getPatient(), patients);
             
+            System.out.println(patient);
             
             if (checkContraindications(rx, patient.getCurrentPrescription(), drugs) == true) {
 
@@ -105,8 +106,10 @@ public class Pharmacist extends Person {
         int counter = 0;
         for (int i = 0; i < rx.getSetOfDrugLines().size(); i++) {
             for (int j = 0; j < currentPrescription.size(); j++) {
-                for (int k = 0; k < drugFinder(currentPrescription.get(j).getDrug(), drugs).getListOfContraindications()
-                        .size(); k++)
+            	Drug d=drugFinder(currentPrescription.get(j).getDrug(), drugs);
+            	System.out.println(d);
+            	int size = d.getListOfContraindications().size();
+            	for (int k = 0; k < size; k++)
                     if (drugFinder(rx.getSetOfDrugLines().get(i).getDrug(), drugs).getType()
                             .equals(drugFinder(currentPrescription.get(j).getDrug(), drugs).getListOfContraindications()
                                     .get(k))) {
@@ -121,23 +124,25 @@ public class Pharmacist extends Person {
             return false;
 
     }
-
+ 
     public Drug drugFinder(String drug, ArrayList<Drug> drugs) {
-        for (int i = 0; i < drugs.size(); i++) {
+        Drug d= new Drug();
+    	for (int i = 0; i < drugs.size(); i++) {
             if (drugs.get(i).getName().equals(drug))
-                return drugs.get(i);
+                d= drugs.get(i);
         }
 
-        return null;
+        return d;
     }	
 
     public Patient patientFinder(String patient, ArrayList<Patient> patients) {
-        for (int i = 0; i < patients.size(); i++) {
+        Patient p = new Patient();
+    	for (int i = 0; i < patients.size(); i++) {
             if (patients.get(i).getName().equals(patient))
-                return patients.get(i);
+                p = patients.get(i);
         }
 
-        return null;
+        return p;
     }   
     
     @Override
