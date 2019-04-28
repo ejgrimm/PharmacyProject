@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public  abstract class Patient extends Person {
+public class Patient extends Person {
 
 	
 	//data members
