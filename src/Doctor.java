@@ -63,6 +63,10 @@ public class Doctor extends Person {
         }
 
     }
+    
+    public String contactDoctor(Doctor d) {
+    	return "Doctor's name: " + getName() + "\n" + "Doctor's phone number: " + getPhone() + "\n" + "Doctor's address: " + getAddress();
+    }
 
     // adds new Drug element for ArrayList for every prescription by doctor
     public void addToWatchlist(Drug d) {
