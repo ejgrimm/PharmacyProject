@@ -55,7 +55,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person [name=" + name + ", ssn=" + ssn + ", address=" + address + ", phone=" + phone + "]";
+        return ";" + getName() + ";" + getSsn() + ";" + getAddress() + ";" + getPhone();
     }
 
    
