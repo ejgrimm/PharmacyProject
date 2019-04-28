@@ -53,9 +53,6 @@ public class PharmacyDriver {
             
         	while(scan.hasNextLine()) {
         		
-        		//if(scan.nextLine().equals(""))
-                	//break;
-        		
         		currentLine=scan.nextLine();
         		if(currentLine.equals(""))
         			break;
