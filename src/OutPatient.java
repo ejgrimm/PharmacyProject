@@ -37,7 +37,7 @@ public class OutPatient extends Patient {
 
     @Override
     public String toString() {
-        return "OutPatient [lastVisit=" + lastVisit + ", toString()=" + super.toString() + "]";
+        return super.toString() + ";" + lastVisit;
     }
 
 	

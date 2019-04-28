@@ -16,14 +16,14 @@ public class InPatient extends Patient {
 			int bedNum, ArrayList<DrugLine> currentPrescription) {
 		super(name, ssn, address, phone, insurance, currentPrescription);
 		this.bedNum = bedNum;
-		setType("InPatient");
+		setType("inPatient");
 	}
 	
 	// no prescriptions yet
     public InPatient(String name, String ssn, String address, String phone, String insurance, int bedNum) {
         super(name, ssn, address, phone, insurance);
         this.bedNum = bedNum;
-        setType("InPatient");
+        setType("inPatient");
     }	
 
 	//getters and setters
@@ -37,7 +37,7 @@ public class InPatient extends Patient {
 
     @Override
     public String toString() {
-        return "InPatient [bedNum=" + bedNum + ", toString()=" + super.toString() + "]";
+        return super.toString() + ";" + bedNum;
     }
 	
 

@@ -41,7 +41,7 @@ public class Doctor extends Person {
     
     // run this method BEFORE addToWatchlist!!!
     public void watchlistAlert(Drug d) {
-        // if any Drug occurs on the doctor's watchlist more than xx times
+        // if any Drug occurs on the doctor's watchlist more than 5 times
         if (this.watchlist.contains(d)) {
             // count occurrences of Drug in Array List
             int numTimes = 0;
