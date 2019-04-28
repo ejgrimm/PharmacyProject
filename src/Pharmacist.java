@@ -113,7 +113,7 @@ public class Pharmacist extends Person {
                         counter++;
                     }
             }
-
+ 
         }
         if (counter != 0) {
             return true;
@@ -124,7 +124,7 @@ public class Pharmacist extends Person {
 
     public Drug drugFinder(String drug, ArrayList<Drug> drugs) {
         for (int i = 0; i < drugs.size(); i++) {
-            if (drugs.get(i).getType().equals(drug))
+            if (drugs.get(i).getName().equals(drug))
                 return drugs.get(i);
         }
 
@@ -133,7 +133,7 @@ public class Pharmacist extends Person {
 
     public Patient patientFinder(String patient, ArrayList<Patient> patients) {
         for (int i = 0; i < patients.size(); i++) {
-            if (patients.get(i).getType().equals(patient))
+            if (patients.get(i).getName().equals(patient))
                 return patients.get(i);
         }
 
