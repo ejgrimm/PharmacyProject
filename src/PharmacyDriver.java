@@ -28,9 +28,7 @@ public class PharmacyDriver {
         
         //pharmacists.get(0).fillPrescription(prescriptions.get(0), nurses.get(0), drugs, patients, doctors);
         
-        for(int i = 0;i<patients.size();i++) {
-        	System.out.println(patients.get(i).getCurrentPrescription());
-        }
+        
 
 
     }
