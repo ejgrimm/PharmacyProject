@@ -23,7 +23,7 @@ public class Pharmacist extends Person {
 	}
 	
 	//other methods
-	public boolean fillPrescription(Prescription rx) {
+	public boolean fillPrescription(Prescription rx, Person p) {
 		return false;
 	}
 	
