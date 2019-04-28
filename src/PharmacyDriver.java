@@ -65,7 +65,7 @@ public class PharmacyDriver {
             
             drugIndex++;
         	}
-            
+              
             
             
         }while (scan.hasNextLine());
