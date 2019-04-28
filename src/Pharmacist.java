@@ -55,7 +55,7 @@ public class Pharmacist extends Person {
             
             Patient patient = patientFinder(rx.getPatient(), patients);
             
-            System.out.println(patient);
+            //System.out.println(patient);
             
             if (checkContraindications(rx, patient.getCurrentPrescription(), drugs) == true) {
 
@@ -79,8 +79,8 @@ public class Pharmacist extends Person {
                             patient.getCurrentPrescription().get(j)
                             .setTimesRefilled(rx.getSetOfDrugLines().get(i).getTimesRefilled());
 
-
-                            return true;
+                            System.out.println("Updating");
+                             
                         }
                     }
                     DrugLine nd = new DrugLine();
@@ -88,9 +88,9 @@ public class Pharmacist extends Person {
                     nd.setDosage(rx.getSetOfDrugLines().get(i).getDosage());
                     nd.setRemainingRefills(rx.getSetOfDrugLines().get(i).getRemainingRefills());
                     nd.setTimesRefilled(rx.getSetOfDrugLines().get(i).getTimesRefilled());
-
+                    System.out.println("Adding new");
                     patient.getCurrentPrescription().add(nd);
-                    return true;
+                    
                 }
             }
             return true;
@@ -106,8 +106,9 @@ public class Pharmacist extends Person {
         int counter = 0;
         for (int i = 0; i < rx.getSetOfDrugLines().size(); i++) {
             for (int j = 0; j < currentPrescription.size(); j++) {
+            	
             	Drug d=drugFinder(currentPrescription.get(j).getDrug(), drugs);
-            	System.out.println(d);
+            	
             	int size = d.getListOfContraindications().size();
             	for (int k = 0; k < size; k++)
                     if (drugFinder(rx.getSetOfDrugLines().get(i).getDrug(), drugs).getType()
