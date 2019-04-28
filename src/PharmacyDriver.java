@@ -20,14 +20,14 @@ public class PharmacyDriver {
         // create an arraylist of Class Objects from reading every file in driver
         createPharmacyObjects();
 //        System.out.println(drugs.toString());
-//        System.out.println(patients.toString());
+        System.out.println(patients.toString());
 //        System.out.println(doctors.toString());
 //        System.out.println(pharmacists.toString());
 //        System.out.println(nurses.toString());
 //        System.out.println(prescriptions.toString());
         
-        //pharmacists.get(0).fillPrescription(prescriptions.get(0), nurses.get(0), drugs, patients, doctors);
-        
+        pharmacists.get(0).fillPrescription(prescriptions.get(13), nurses.get(0), drugs, patients, doctors);
+        System.out.println(patients.toString());
         
 
 

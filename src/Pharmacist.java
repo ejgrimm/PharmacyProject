@@ -66,9 +66,17 @@ public class Pharmacist extends Person {
             else {
 
                 for (int i = 0; i < rx.getSetOfDrugLines().size(); i++) {
-
-                    //if(drugFinder(rx.getSetOfDrugLines().get(i).getDrug(),drugs))
-
+                	int counter=0;
+                    
+                	if(drugFinder(rx.getSetOfDrugLines().get(i).getDrug(),drugs).getWatchlist()==true) {
+                		rx.getPrescribingDoctor()
+                	}
+                    	
+                    	
+                    	
+                    	
+                    	
+                	System.out.println(rx.getSetOfDrugLines().get(i).getDrug());
                     for (int j = 0; j < patient.getCurrentPrescription().size(); j++) {
                         if (patient.getCurrentPrescription().get(j).getDrug()
                                 .equals(rx.getSetOfDrugLines().get(i).getDrug())) {
@@ -80,9 +88,11 @@ public class Pharmacist extends Person {
                             .setTimesRefilled(rx.getSetOfDrugLines().get(i).getTimesRefilled());
 
                             System.out.println("Updating");
-                             
+                            counter++;
                         }
+                        
                     }
+                    if(counter==0) {
                     DrugLine nd = new DrugLine();
                     nd.setDrug(rx.getSetOfDrugLines().get(i).getDrug());
                     nd.setDosage(rx.getSetOfDrugLines().get(i).getDosage());
@@ -90,7 +100,8 @@ public class Pharmacist extends Person {
                     nd.setTimesRefilled(rx.getSetOfDrugLines().get(i).getTimesRefilled());
                     System.out.println("Adding new");
                     patient.getCurrentPrescription().add(nd);
-                    
+                    }
+                    counter=0;
                 }
             }
             return true;
@@ -127,13 +138,13 @@ public class Pharmacist extends Person {
     }
  
     public Drug drugFinder(String drug, ArrayList<Drug> drugs) {
-        Drug d= new Drug();
+        Drug dr= new Drug();
     	for (int i = 0; i < drugs.size(); i++) {
             if (drugs.get(i).getName().equals(drug))
-                d= drugs.get(i);
+                dr= drugs.get(i);
         }
 
-        return d;
+        return dr;
     }	
 
     public Patient patientFinder(String patient, ArrayList<Patient> patients) {
@@ -144,7 +155,16 @@ public class Pharmacist extends Person {
         }
 
         return p;
-    }   
+    }  
+    
+    public Doctor doctorFinder(String doctor, ArrayList<Doctor> doctors) {
+    	Doctor d = new Doctor();
+    	for(int i = 0; i < doctors.size(); i++) {
+    		if(doctors.get(i).getName().equals(doctor))
+    			d=doctors.get(i);
+    	}
+    	return d;
+    }
     
     @Override
     public String toString() {
