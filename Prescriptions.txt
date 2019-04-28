@@ -1,7 +1,71 @@
-123456789; 04.01.19; PRESCRIBING DOCTOR NAME; PATIENT NAME;
-DRUGLINE: DRUG
-DRUGLINE2
+935542221;03.01.19;Dr. Isobel "Izzie" Stevens;Nikola Pavlovic;
+Abstral;1mg;1;4;
+Flovent HFA;10mg;4;1;
 
-987654321; 04.15.19; PRESCRIBING DOCTOR NAME; PATIENT NAME;
+388451283;04.01.19;Dr. George O'Malley;Sara Vicanovic;
+Zohydro ER;5mg;1;0;
+Xanax;50mg;5;0;
 
+987654321;04.15.19;Dr. Christina Yang;Dajana Kocic;
+Ventolin HFA;15mg;1;0;
+
+493166093;04.17.19;Dr. Alexandra "Lexie" Grey;Segej Banjac;
+Tuzistra XR;2.5mg;0;4;
+
+212083937;03.31.19;Dr. April Kepner;Stefan Miskovic;
+Methadose;7mg;1;1;
+Robaxin;11mg;2;0;
+
+579340304;04.10.19;Dr. Calliope "Callie" Torres;Srdjan Kovacevic;
+Ultram;20mg;2;2;
+OxyContin;15mg;1;0;
+Ventolin HFA;30mg;5;1;
+
+478180642;03.16.19;Dr. Amelia Shepherd;Aleksandra Romanic;
+Prozac;15mg;1;4;
+
+935542221;03.01.19;Dr. Isobel "Izzie" Stevens;Nikola Pavlovic;
+Abstral;1mg;1;4;
+Flovent HFA;10mg;4;1;
+
+273025436;04.01.19;Dr. Arizona Robbins;Andrej Mijatovic;
+Ultram;4mg;2;3;
+
+217719824;04.28.19;Dr. Margaret "Maggie" Pierce;Natasa Dobras;
+Ambien;6mg;1;0;
+Risperdal;10mg;2;2;
+Prozac;30mg;1;4;
+
+493166093;04.17.19;Dr. Alexandra "Lexie" Grey;Segej Banjac;
+Tuzistra XR;2.5mg;0;4;
+
+764409535;04.10.19;Dr. Addison Montgomery;Ivana Cvisic;
+Sectral;35mg;5;1;
+
+806717335;02.28.19;Dr. Atticus "Link" Lincoln;Vlado Rosic;
+Humalog;15ml;3;1;
+Lantus;15ml;4;0;
+
+478180642;03.16.19;Dr. Amelia Shepherd;Aleksandra Romanic;
+Prozac;15mg;1;4;
+
+347865791;04.02.19;Dr. Erica Hahn;Ivana Djukic;
+Xanax;5mg;0;5;
+
+538475692;04.09.19;Dr. Meredith Grey;Maja Pejic;
+Tuzistra XR;7mg;1;1;
+Robaxin;5mg;2;0;
+
+493166093;04.17.19;Dr. Alexandra "Lexie" Grey;Segej Banjac;
+Tuzistra XR;2.5mg;0;4;
+
+630929425;04.20.19;Dr. Preston Burke;Sara Majkic;
+Abstral;3mg;2;1;
+Eskalith;5mg;3;1;
+
+343499040;03.21.19;Dr. Richard Webber;Sasa Atelj;
+Ambien;10mg;0;4;
+
+347865791;04.02.19;Dr. Erica Hahn;Ivana Djukic;
+Xanax;5mg;0;5;
 
