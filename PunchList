@@ -8,6 +8,7 @@ fill prescriptions method in pharmacist
        update existing drugLines for patient if prescritpion is already in system - refills decrement and times refilled increment
      always check contraindications
      ??? check conditions?? - add prexisting conditions or diagnosis to Patient?
+     
 findDoctors method - generate a list of doctors who prescribed a named drug more than a stipulated number of times
 checkContraindications method - needs to be independent of fill prescriptions in Pharmacist
 contactDoctor - return contact information for specific doctor
