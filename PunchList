@@ -1,13 +1,13 @@
 Need:
 
-Prescriptions text file
-Implement fillPrescriptionsArray in Driver
+Prescriptions text file - ERIC - DONE
+Implement fillPrescriptionsArray in Driver - ERIC - IN PROGRESS
 
 fill prescriptions method in pharmacist
      arguments (Prescription rx, Person p )
-       update existing drugLines for patient if prescritpion is already in system - refills decrement and times refilled increment
+       update existing drugLines for patient if prescription is already in system - refills decrement and times refilled increment
      always check contraindications
-     ??? check conditions?? - add prexisting conditions or diagnosis to Patient?
+     ??? check conditions?? - add pre-existing conditions or diagnosis to Patient?
      
 findDoctors method - generate a list of doctors who prescribed a named drug more than a stipulated number of times
 checkContraindications method - needs to be independent of fill prescriptions in Pharmacist

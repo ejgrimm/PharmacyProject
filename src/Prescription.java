@@ -12,7 +12,6 @@ public class Prescription {
 	// constructors
 	public Prescription(String id, String dateIssued, String prescribingDoctor, ArrayList<DrugLine> setOfDrugLines,
 		String patient) {
-		super();
 		this.id = id;
 		this.dateIssued = dateIssued;
 		this.prescribingDoctor = prescribingDoctor;
@@ -69,6 +68,13 @@ public class Prescription {
 	public void setPatient(String patient) {
 		this.patient = patient;
 	}
+
+
+    @Override
+    public String toString() {
+        return "Prescription [id=" + id + ", dateIssued=" + dateIssued + ", prescribingDoctor=" + prescribingDoctor
+                + ", setOfDrugLines=" + setOfDrugLines + ", patient=" + patient + "]";
+    }
 	
 	
 	
