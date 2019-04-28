@@ -12,21 +12,21 @@ public class PharmacyDriver {
     private static ArrayList<Nurse> nurses;
     private static ArrayList<Drug> drugs;
     private static ArrayList<Prescription> prescriptions;
-    
+
 
     public static void main(String[] args) {     
 
         // putting methods to instantiate objects from files in each Class
         // create an arraylist of Class Objects from reading every file in driver
-    	createPharmacyObjects();
+        createPharmacyObjects();
         System.out.println(drugs.toString());
         System.out.println(patients.toString());
         System.out.println(doctors.toString());
         System.out.println(pharmacists.toString());
         System.out.println(nurses.toString());
         System.out.println(prescriptions.toString());
-       
-        
+
+
     }
 
     // helper methods
@@ -38,40 +38,40 @@ public class PharmacyDriver {
         readNurseFile("Nurses.txt");
         readPrescriptionsFile("Prescriptions.txt");
     }
-    
+
     private static void readDrugFile(String fileName) {
         File file = new File(fileName);
         Scanner scan = null;
-        
+
         drugs = new ArrayList<Drug>();
         String currentLine;
-        
+
         try {
             scan = new Scanner(file);
-            
+
         } catch (FileNotFoundException e) {
-        e.printStackTrace();
+            e.printStackTrace();
         } 
-        
+
         int drugIndex = 0;
         do {
             drugs.add(new Drug());
-            
-        	while(scan.hasNextLine()) {        		
-        		currentLine=scan.nextLine();
-        		if(currentLine.equals(""))
-        			break;
- 
-            for (int i = 0; i <7; i++) {                
-                fillDrugsArrayList(currentLine, i, drugIndex);
-                currentLine = scan.nextLine(); 
-            }           
-            drugIndex++;
-        	}                                   
+
+            while(scan.hasNextLine()) {        		
+                currentLine=scan.nextLine();
+                if(currentLine.equals(""))
+                    break;
+
+                for (int i = 0; i <7; i++) {                
+                    fillDrugsArrayList(currentLine, i, drugIndex);
+                    currentLine = scan.nextLine(); 
+                }           
+                drugIndex++;
+            }                                   
         }while (scan.hasNextLine());
     }
-    
-    
+
+
     // add watchlist boolean -extra line at bottom of drug
     private static ArrayList<Drug> fillDrugsArrayList(String currentLine, int i, int drugIndex) {
         String[] elements;
@@ -122,7 +122,7 @@ public class PharmacyDriver {
         }
         return drugs;
     }
-    
+
     private static void readPatientFile(String fileName) {
         File file = new File(fileName);
         Scanner scan = null;
@@ -140,10 +140,10 @@ public class PharmacyDriver {
             String[] values = currentLine.split(";");                        
             fillPatientsArray(values);
         } 
-        
+
         scan.close();
     }
-    
+
     private static ArrayList<Patient> fillPatientsArray(String[] values) {       
         ArrayList<DrugLine> drugLine = new ArrayList<DrugLine>();
         if (values[7].equals("None")) {
@@ -185,10 +185,10 @@ public class PharmacyDriver {
             String[] values = currentLine.split(";");                        
             fillDoctorsArray(values);
         } 
-        
+
         scan.close();
     }    
-    
+
     private static ArrayList<Doctor> fillDoctorsArray(String[] values) {       
         doctors.add(new Doctor(values[0], values[1], values[2], values[3], values[4]));
         return doctors;
@@ -211,12 +211,12 @@ public class PharmacyDriver {
             String[] values = currentLine.split(";");                        
             fillPharmacistsArray(values);
         } 
-        
+
         scan.close();
     }     
-    
+
     private static ArrayList<Pharmacist> fillPharmacistsArray(String[] values) {
-        
+
         pharmacists.add(new Pharmacist(values[0], values[1], values[2], values[3], values[4]));
         return pharmacists;
     }
@@ -238,18 +238,18 @@ public class PharmacyDriver {
             String[] values = currentLine.split(";");                        
             fillNursesArray(values);
         } 
-        
+
         scan.close();
     }       
-    
+
     private static ArrayList<Nurse> fillNursesArray(String[] values) {        
         nurses.add(new Nurse(values[0], values[1], values[2], values[3], values[4], values[5]));
         return nurses;
     }
-      
-    
+
+
     private static void readPrescriptionsFile(String fileName) {
-    	File file = new File(fileName);
+        File file = new File(fileName);
         Scanner scan = null;
         String[] values;
         String currentLine;
@@ -261,27 +261,23 @@ public class PharmacyDriver {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        
+
         while(scan.hasNextLine()) {
-        	ArrayList<DrugLine> drugLines = new ArrayList<DrugLine>();
-        	
-        	currentLine = scan.nextLine();
-        	values = currentLine.split(";");
-        	
-        	
-        	while(scan.nextLine().equals("DRUGLINE")) {           	
-        		drugLine = scan.nextLine();
-        		String[] values2 = drugLine.split(";");
-        		drugLines.add(new DrugLine(values2[0],values2[1],Integer.parseInt(values2[2]),Integer.parseInt(values2[3])));
-        	}
-        	prescriptions.add(new Prescription(values[0],values[1],values[2],drugLines,values[3]));
-        	
-        
-        	
-        		
-        	
-        }
-        
+            ArrayList<DrugLine> drugLines = new ArrayList<DrugLine>();
+
+            currentLine = scan.nextLine();
+            values = currentLine.split(";");
+
+
+            while(scan.nextLine().equals("DRUGLINE")) {           	
+                drugLine = scan.nextLine();
+                String[] values2 = drugLine.split(";");
+                drugLines.add(new DrugLine(values2[0],values2[1],Integer.parseInt(values2[2]),Integer.parseInt(values2[3])));
+            }
+            prescriptions.add(new Prescription(values[0],values[1],values[2],drugLines,values[3]));	
+        }        
     }
+
+
 }
 
