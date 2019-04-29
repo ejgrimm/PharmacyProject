@@ -62,7 +62,5 @@ public class Patient extends Person {
     public String toString() {
         return type + super.toString() + ";" + insurance;
     }
-	
-	
 
 }

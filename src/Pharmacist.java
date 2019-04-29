@@ -87,6 +87,11 @@ public class Pharmacist extends Person {
 			return false;
 		}
 	}
+	
+	public void commit(String filename) {
+		
+		
+	}
 
 	public boolean checkContraindications(Prescription rx, ArrayList<DrugLine> currentPrescription,
 			ArrayList<Drug> drugs) {
