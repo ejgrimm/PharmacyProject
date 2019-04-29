@@ -37,7 +37,7 @@ public class OutPatient extends Patient {
 
     @Override
     public String toString() {
-        return super.toString() + ";" + lastVisit + ";" + getCurrentPrescription();
+        return super.toString() + ";" + lastVisit + ";"; //getCurrentPrescription();
     }
 
 	
