@@ -6,6 +6,7 @@ public class Doctor extends Person {
     // data members   
     private String specialization;
     private ArrayList<Drug> watchlist;
+    private boolean hasPrescribedAlot;
     
     // constructors - both
     public Doctor() {
@@ -18,6 +19,7 @@ public class Doctor extends Person {
         super(name, ssn, address, phone);
         this.specialization = specialization;
         this.watchlist = new ArrayList<Drug>();
+        hasPrescribedAlot = false;
     }
 
     // getters & setters 
@@ -53,9 +55,11 @@ public class Doctor extends Person {
             }
             if (numTimes > 5) {
                 System.out.println("Caution! " + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
+                hasPrescribedAlot = true;
             }
             else {
                 System.out.println("All clear!" + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
+                hasPrescribedAlot = false;
             }           
         }
         else {
@@ -78,6 +82,16 @@ public class Doctor extends Person {
         return "Doctor [specialization=" + specialization + ", watchlist=" + watchlist + ", toString()="
                 + super.toString() + "]";
     }
+
+	public boolean isHasPrescribedAlot() {
+		return hasPrescribedAlot;
+	}
+
+	public void setHasPrescribedAlot(boolean hasPrescribedAlot) {
+		this.hasPrescribedAlot = hasPrescribedAlot;
+	}
+    
+    
 
  
     
