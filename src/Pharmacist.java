@@ -1,6 +1,11 @@
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
-public class Pharmacist extends Person {
+public class Pharmacist extends Person implements Committable {
 
 	// data members
 	private String certificationDate;
@@ -26,7 +31,7 @@ public class Pharmacist extends Person {
 	// other methods
 
 	public boolean fillPrescription(Prescription rx, Person p, ArrayList<Drug> drugs, ArrayList<Patient> patients,
-			ArrayList<Doctor> doctors) {
+			ArrayList<Doctor> doctors, String fileName) {
 		// check if authorized
 		if (p instanceof OutPatient || p instanceof Nurse) {
 			// check if prescription is currently in the system
@@ -63,7 +68,7 @@ public class Pharmacist extends Person {
 							patient.getCurrentPrescription().get(j)
 									.setTimesRefilled(rx.getSetOfDrugLines().get(i).getTimesRefilled());
 
-							System.out.println("Updating");
+							
 							counter++;
 						}
 
@@ -74,12 +79,15 @@ public class Pharmacist extends Person {
 						nd.setDosage(rx.getSetOfDrugLines().get(i).getDosage());
 						nd.setRemainingRefills(rx.getSetOfDrugLines().get(i).getRemainingRefills());
 						nd.setTimesRefilled(rx.getSetOfDrugLines().get(i).getTimesRefilled());
-						System.out.println("Adding new");
+						
 						patient.getCurrentPrescription().add(nd);
+						
+						
 					}
 					counter = 0;
 				}
 			}
+			commit("patients.txt", patients);
 			return true;
 		} else {
 
@@ -88,8 +96,42 @@ public class Pharmacist extends Person {
 		}
 	}
 	
-	public void commit(String filename) {
+	public String[] commitHelp(ArrayList<Patient> patients) {
+		String[] patientInfo = new String[patients.size()];
+		for(int i = 0; i < patients.size();i++) {
+        	//System.out.print(patients.get(i));
+			patientInfo[i]="";
+			
+			patientInfo[i]+=patients.get(i);
+			
+        	// inner loop prints patient drug information
+        	for(int j = 0; j < patients.get(i).getCurrentPrescription().size(); j++) {
+            	//System.out.print(patients.get(i).getCurrentPrescription().get(j) + ";");
+            	patientInfo[i]+=patients.get(i).getCurrentPrescription().get(j) + ";";
+            }
+        	//System.out.println();     	
+        }
 		
+		return patientInfo;
+	}
+	
+	public void commit(String fileName, ArrayList<Patient> patients) {
+		
+		String[] pInfo=commitHelp( patients);
+		
+		try {
+			BufferedWriter w2 = new BufferedWriter(new FileWriter(fileName, false));
+			BufferedWriter w = new BufferedWriter(new FileWriter(fileName, true));
+			for(int i=0; i<commitHelp(patients).length; i++) {
+				w.append(pInfo[i] + "\n");
+				
+				
+			}
+			w.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
@@ -147,6 +189,8 @@ public class Pharmacist extends Person {
 		return d;
 	}
 
+	
+	
 	@Override
 	public String toString() {
 		return "Pharmacist [certificationDate=" + certificationDate + ", toString()=" + super.toString() + "]";

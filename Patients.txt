@@ -1,20 +1,20 @@
-inPatient;Nikola Pavlovic;983-05-1234;1407 Fairbanks, winter park, 32789, Florida;407-760-8888;Blue Cross;357;Lantus,10mg,4,8
-inPatient;Sara Vicanovic;783-10-1532;2647 Fairbanks, winter park, 32789, Florida;407-762-6789;Blue Cross;257;Yaz,4mg,10,2
-inPatient;Dajana Kocic;846-18-8549;1223 Fairbanks, winter park, 32789, Florida;407-285-9544;aetna;369;Yaz,4mg,10,2
-inPatient;Segej Banjac;478-43-7657;7892 Fairbanks, winter park, 32789, Florida;407-941-2368;aetna;152;None
-inPatient;Stefan Miskovic;764-74-6121;3221 Fairbanks, winter park, 32789, Florida;407-786-4862;aetna;268;Lantus,10mg,4,8
-inPatient;Srdjan Kovacevic;183-08-1942;1122 Fairbanks, winter park, 32789, Florida;407-014-7851;Blue Cross;311;Lantus,10mg,4,8
-inPatient;Aleksandra Romanic;191-78-4633;1255 Orange Ave., winter park, 32789, Florida;407-421-0126;Blue Cross;144;None
-inPatient;Andrej Mijatovic;369-11-9852;1407 Orange Ave., winter park, 32789, Florida;407-357-9536;WellCare;399;None
-inPatient;Natasa Dobras;789-54-8224;1119 Holt Ave., winter park, 32789, Florida;407-260-0331;WellCare;237;Lantus,10mg,4,8
-inPatient;Ivana Cvisic;510-34-8741;2887 Orange Ave., winter park, 32789, Florida;407-745-5412;Blue Cross;121;Lantus,10mg,4,8
-outPatient;Vlado Rosic;489-21-2948;3214 Orange Ave., winter park, 32789, Florida;407-778-3641;Blue Cross;12/20/2018;Lantus,10mg,4,8
-outPatient;Ivana Djukic;294-58-2694;1254 Fairbanks, winter park, 32789, Florida;407-122-2255;Blue Cross;02/14/2019;Lantus,10mg,4,8
-outPatient;Maja Pejic;510-34-4844;5874 Orange Ave., winter park, 32789, Florida;407-987-6431;aetna;06/15/2018;Lantus,10mg,4,8
-outPatient;Sara Majkic;862-47-0302;1155 Holt Ave., winter park, 32789, Florida;407-020-3549;aetna;03/06/2019;Yaz,4mg,10,2
-outPatient;Sasa Atelj;147-22-6845;1002 Orange Ave., winter park, 32789, Florida;407-083-9173;United Healthcare;10/03/2017;None
-outPatient;Minja Zeric;203-01-0213;1455 Fairbanks., winter park, 32789, Florida;407-114-3360;Blue Cross;12/12/2018;None
-outPatient;Vanja Zeric;101-25-1441;2451 Orange Ave., winter park, 32789, Florida;407-884-2207;aetna;04/02/2019;Yaz,4mg,10,2
-outPatient;Milos Balaban;645-99-3344;2889 Holt Ave., winter park, 32789, Florida;407-011-8243;United Healthcare;03/14/2018;None
-outPatient;Milena Putnik;780-41-3588;1036 Fairbanks, winter park, 32789, Florida;407-505-9331;Blue Cross;07/25/2017;None
-outPatient;Tamara Stanojevic;121-69-7820;2555 Orange Ave., winter park, 32789, Florida;407-100-3067;WellCare;06/29/2018;Yaz,4mg,10,2
+inPatient;Nikola Pavlovic;983-05-1234;1407 Fairbanks, winter park, 32789, Florida;407-760-8888;Blue Cross;357;Lantus,10mg,4,8;
+inPatient;Sara Vicanovic;783-10-1532;2647 Fairbanks, winter park, 32789, Florida;407-762-6789;Blue Cross;257;Yaz,4mg,10,2;
+inPatient;Dajana Kocic;846-18-8549;1223 Fairbanks, winter park, 32789, Florida;407-285-9544;aetna;369;Yaz,4mg,10,2;
+inPatient;Segej Banjac;478-43-7657;7892 Fairbanks, winter park, 32789, Florida;407-941-2368;aetna;152;
+inPatient;Stefan Miskovic;764-74-6121;3221 Fairbanks, winter park, 32789, Florida;407-786-4862;aetna;268;Lantus,10mg,4,8;
+inPatient;Srdjan Kovacevic;183-08-1942;1122 Fairbanks, winter park, 32789, Florida;407-014-7851;Blue Cross;311;Lantus,10mg,4,8;
+inPatient;Aleksandra Romanic;191-78-4633;1255 Orange Ave., winter park, 32789, Florida;407-421-0126;Blue Cross;144;
+inPatient;Andrej Mijatovic;369-11-9852;1407 Orange Ave., winter park, 32789, Florida;407-357-9536;WellCare;399;
+inPatient;Natasa Dobras;789-54-8224;1119 Holt Ave., winter park, 32789, Florida;407-260-0331;WellCare;237;Lantus,10mg,4,8;
+inPatient;Ivana Cvisic;510-34-8741;2887 Orange Ave., winter park, 32789, Florida;407-745-5412;Blue Cross;121;Lantus,10mg,4,8;
+outPatient;Vlado Rosic;489-21-2948;3214 Orange Ave., winter park, 32789, Florida;407-778-3641;Blue Cross;12/20/2018;Lantus,15ml,4,0;Humalog,15ml,3,1;
+outPatient;Ivana Djukic;294-58-2694;1254 Fairbanks, winter park, 32789, Florida;407-122-2255;Blue Cross;02/14/2019;Lantus,10mg,4,8;
+outPatient;Maja Pejic;510-34-4844;5874 Orange Ave., winter park, 32789, Florida;407-987-6431;aetna;06/15/2018;Lantus,10mg,4,8;
+outPatient;Sara Majkic;862-47-0302;1155 Holt Ave., winter park, 32789, Florida;407-020-3549;aetna;03/06/2019;Yaz,4mg,10,2;
+outPatient;Sasa Atelj;147-22-6845;1002 Orange Ave., winter park, 32789, Florida;407-083-9173;United Healthcare;10/03/2017;
+outPatient;Minja Zeric;203-01-0213;1455 Fairbanks., winter park, 32789, Florida;407-114-3360;Blue Cross;12/12/2018;
+outPatient;Vanja Zeric;101-25-1441;2451 Orange Ave., winter park, 32789, Florida;407-884-2207;aetna;04/02/2019;Yaz,4mg,10,2;
+outPatient;Milos Balaban;645-99-3344;2889 Holt Ave., winter park, 32789, Florida;407-011-8243;United Healthcare;03/14/2018;
+outPatient;Milena Putnik;780-41-3588;1036 Fairbanks, winter park, 32789, Florida;407-505-9331;Blue Cross;07/25/2017;
+outPatient;Tamara Stanojevic;121-69-7820;2555 Orange Ave., winter park, 32789, Florida;407-100-3067;WellCare;06/29/2018;Yaz,4mg,10,2;

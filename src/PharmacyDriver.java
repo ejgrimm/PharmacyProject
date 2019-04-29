@@ -27,7 +27,7 @@ public class PharmacyDriver {
 //        System.out.println(nurses.toString());
 //        System.out.println(prescriptions.toString());
                   
-        pharmacists.get(0).fillPrescription(prescriptions.get(13), nurses.get(0), drugs, patients, doctors);
+        pharmacists.get(0).fillPrescription(prescriptions.get(13), nurses.get(0), drugs, patients, doctors,"patients.txt");
 
         // updated print out code
         // outer loop prints patient information
