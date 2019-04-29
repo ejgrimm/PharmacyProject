@@ -8,6 +8,7 @@ public class PharmacyDriver {
     // global data members
     private static ArrayList<Patient> patients;
     private static ArrayList<Doctor> doctors;
+    private static ArrayList<Doctor> doctorsAlot;
     private static ArrayList<Pharmacist> pharmacists;
     private static ArrayList<Nurse> nurses;
     private static ArrayList<Drug> drugs;
@@ -20,7 +21,7 @@ public class PharmacyDriver {
         // create an arraylist of Class Objects from reading every file in driver
         createPharmacyObjects();
 //        System.out.println(drugs.toString());
-        System.out.println(patients.toString());
+//        System.out.println(patients.toString());
 //        System.out.println(doctors.toString());
 //        System.out.println(pharmacists.toString());
 //        System.out.println(nurses.toString());
@@ -213,7 +214,27 @@ public class PharmacyDriver {
         } 
 
         scan.close();
-    }    
+    }  
+    
+    private static ArrayList<Doctor> findDoctors(ArrayList<Doctor> doctors, Drug drug) {
+    	//drug on watchlist?
+    	int drugCounter = 0;
+    	
+    	if (drug.getWatchlist()) {
+    		//yes? --> check every doctors list for watchlist drug
+    		for(int i = 0; i<doctors.size(); i++) {
+    			if(doctors.get(i).getWatchlist().contains(drug)) {
+    				for (int a = 0; a<doctors.get(i).getWatchlist().size(); a++) {
+    					if (doctors.get(i).getWatchlist().get(a) == drug) {
+    						
+    					}
+    				}
+    			}
+        	}
+    	}
+    	return doctorsAlot;
+    	
+    }
 
     private static ArrayList<Doctor> fillDoctorsArray(String[] values) {       
         doctors.add(new Doctor(values[0], values[1], values[2], values[3], values[4]));

@@ -92,7 +92,8 @@ public class Drug {
 	public void setWatchlist(boolean watchlist) {
 		this.watchlist = watchlist;
 	}
-    @Override
+	
+	//tostring method for drug
     public String toString() {
         return "Drug [name=" + name + ", chemicalName=" + chemicalName + ", ingredients=" + ingredients
                 + ", manufacturingCompany=" + manufacturingCompany + ", type=" + type + ", listOfConditions="
