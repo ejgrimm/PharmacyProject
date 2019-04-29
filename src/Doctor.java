@@ -96,4 +96,10 @@ public class Doctor extends Person implements Committable {
 		
 		
 	}
+
+	@Override
+	public void commit(String fileName, ArrayList<Patient> patients) {
+		// TODO Auto-generated method stub
+		
+	}
 }
