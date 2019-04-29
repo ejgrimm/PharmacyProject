@@ -31,7 +31,7 @@ public class PharmacyDriver {
         // updated print out code
         // outer loop prints patient information
         for(int i = 0; i < patients.size();i++) {
-        		System.out.print(patients.get(i));
+        	System.out.print(patients.get(i));
         	// inner loop prints patient drug information
         	for(int j = 0; j < patients.get(i).getCurrentPrescription().size(); j++) {
             	System.out.print(patients.get(i).getCurrentPrescription().get(j) + ";");
