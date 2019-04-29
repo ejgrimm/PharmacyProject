@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Doctor extends Person {
+public class Doctor extends Person implements Committable {
     
     // data members   
     private String specialization;
@@ -89,11 +89,11 @@ public class Doctor extends Person {
 
 	public void setHasPrescribedAlot(boolean hasPrescribedAlot) {
 		this.hasPrescribedAlot = hasPrescribedAlot;
+	} 
+	
+	public void commit(String filename) {
+		
+		
+		
 	}
-    
-    
-
- 
-    
-    
 }
