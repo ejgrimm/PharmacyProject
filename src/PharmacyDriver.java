@@ -309,6 +309,4 @@ public class PharmacyDriver {
             prescriptions.add(new Prescription(values[0],values[1],values[2],drugLines,values[3]));	
         }        
     }
-
-
 }
