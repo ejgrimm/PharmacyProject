@@ -20,20 +20,18 @@ public class PharmacyDriver {
         // putting methods to instantiate objects from files in each Class
         // create an arraylist of Class Objects from reading every file in driver
         createPharmacyObjects();
-//        System.out.println(drugs.toString());
+        System.out.println(drugs.toString());
 //        System.out.println(patients.toString());
 //        System.out.println(doctors.toString());
 //        System.out.println(pharmacists.toString());
 //        System.out.println(nurses.toString());
 //        System.out.println(prescriptions.toString());
                   
-       
-       
-        int z=0;
-        while(z<20) {
-        	 pharmacists.get(0).fillPrescription(prescriptions.get(z), nurses.get(0), drugs, patients, doctors,"patients.txt");	
-        	 z++;
-        }
+        pharmacists.get(0).fillPrescription(prescriptions.get(13), nurses.get(0), drugs, patients, doctors,"patients.txt");
+        pharmacists.get(0).fillPrescription(prescriptions.get(15), nurses.get(0), drugs, patients, doctors,"patients.txt");
+        pharmacists.get(0).fillPrescription(prescriptions.get(6), nurses.get(0), drugs, patients, doctors,"patients.txt");
+        //pharmacists.get(0).fillPrescription(prescriptions.get(8), nurses.get(0), drugs, patients, doctors,"patients.txt");
+       //pharmacists.get(0).fillPrescription(prescriptions.get(10), nurses.get(0), drugs, patients, doctors,"patients.txt");
         
         //createPharmacyObjects();
         // updated print out code
@@ -83,23 +81,25 @@ public class PharmacyDriver {
         
         int drugIndex = 0;
         do {
-            drugs.add(new Drug());
+            
 
             // gets current line and will send it to fillDrugsArrayList along with the i so that we can keep track
         	// of which line that we are on in the drug, and a drugIndex variable to keep track of the drug in order
         	// to add it to the arrayList
             while(scan.hasNextLine()) {        		
-                
+            	drugs.add(new Drug());
             	currentLine=scan.nextLine();
                 if(currentLine.equals(""))
                     break;
 
-                for (int i = 0; i <7; i++) {                
+                for (int i = 0; i <8; i++) { 
                     fillDrugsArrayList(currentLine, i, drugIndex);
                     currentLine = scan.nextLine(); 
-                }           
+                } 
                 drugIndex++;
-            }                                   
+            }  
+            
+            
         } while (scan.hasNextLine());
     }
     

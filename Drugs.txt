@@ -177,3 +177,4 @@ narcotics
 opiod addiction
 cytochrome P450 inducers,cytochrome P450 inhibitors,CNS depressants,MAO inhibitors,alcohol,barbiturates,benzodiazepines,buprenorphine,carbamazepine,chloral hydrate,chlormethiazole,cimetidine,urine alkalisers
 true
+
