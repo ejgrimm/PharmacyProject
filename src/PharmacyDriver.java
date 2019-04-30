@@ -37,26 +37,11 @@ public class PharmacyDriver {
         	doctors.get(0).addToWatchlist(drugs.get(2));
         	}
         
-      
+        // testing find doctors
         ArrayList<Doctor> baddies = new ArrayList<Doctor>(findDoctors(doctors,drugs.get(2)));
-        System.out.println(baddies);
-        
-        // updated print out code
-        // outer loop prints patient information
-        
-        // print out patients
-        
-        /*for(int i = 0; i < patients.size();i++) {
-        	System.out.print(patients.get(i));
-        	// inner loop prints patient drug information
-        	for(int j = 0; j < patients.get(i).getCurrentPrescription().size(); j++) {
-            	System.out.print(patients.get(i).getCurrentPrescription().get(j) + ";");
-            }
-        	System.out.println();     	
-        }*/
-
-
-    
+        for(int i = 0; i < baddies.size();i++) {
+        	System.out.println(baddies.get(i).getName());
+        }
     }
     // helper methods
     private static void createPharmacyObjects() {
