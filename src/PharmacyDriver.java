@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class PharmacyDriver {
 
-	// global data members
+	// global data members for all object types
 	private static ArrayList<Patient> patients;
 	private static ArrayList<Doctor> doctors;
 	private static ArrayList<Doctor> doctorsAlot;
@@ -39,7 +39,8 @@ public class PharmacyDriver {
 
 	}
 	// helper methods
-
+	
+	// reads Transactions text file to provide instructions to Pharmacy system
 	public static void readTransactions() {
 		try {
 			String line;
@@ -70,17 +71,14 @@ public class PharmacyDriver {
 			}
 			scan.close();
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 	}
 
-	// helper for finding pharmacists
-
+	// helper for finding person by type
 	public static Person findPerson(String person, ArrayList<Patient> patients, ArrayList<Doctor> doctors,
 			ArrayList<Nurse> nurses) {
 		for (int i = 0; i < doctors.size(); i++) {
@@ -97,7 +95,8 @@ public class PharmacyDriver {
 		}
 		return null;
 	}
-
+	
+	// searching pharmacist ArrayList to find pharmacist who will be filling prescription
 	public static Pharmacist pharmacistFinder(String ph, ArrayList<Pharmacist> pharmacists) {
 		Pharmacist p = new Pharmacist();
 		for (int i = 0; i < pharmacists.size(); i++) {
