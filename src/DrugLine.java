@@ -1,13 +1,13 @@
 
 public class DrugLine {
 
-	//data members
+	// data members
 	private String drug;
 	private String dosage;
 	private int remainingRefills;
 	private int timesRefilled;
-	
-	//constructors
+
+	// constructors
 	public DrugLine() {
 		remainingRefills = 0;
 		timesRefilled = 0;
@@ -20,7 +20,7 @@ public class DrugLine {
 		timesRefilled = t;
 	}
 
-	//getters and setters
+	// getters and setters
 	public String getDrug() {
 		return drug;
 	}
@@ -52,16 +52,16 @@ public class DrugLine {
 	public void setTimesRefilled(int timesRefilled) {
 		this.timesRefilled = timesRefilled;
 	}
-	
+
 	// other methods
 	public void updateDrugLine() {
-	    this.timesRefilled += 1;
-	    this.remainingRefills -= 1;
+		this.timesRefilled += 1;
+		this.remainingRefills -= 1;
 	}
 
 	@Override
 	public String toString() {
-		return drug + "," + dosage + "," + remainingRefills	+ "," + timesRefilled;
+		return drug + "," + dosage + "," + remainingRefills + "," + timesRefilled;
 	}
-		
+
 }

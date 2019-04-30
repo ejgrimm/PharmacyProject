@@ -2,31 +2,32 @@ import java.util.ArrayList;
 
 public class OutPatient extends Patient {
 
-	//data members
+	// data members
 	private String lastVisit;
 
-	//constructors	
-	
+	// constructors
+
 	public OutPatient() {
 		super();
 	}
-	
+
 	// with prescriptions
 
-	public OutPatient(String name, String ssn, String address, String phone, String insurance,
-			String lastVisit, ArrayList<DrugLine> currentPrescription) {
+	public OutPatient(String name, String ssn, String address, String phone, String insurance, String lastVisit,
+			ArrayList<DrugLine> currentPrescription) {
 		super(name, ssn, address, phone, insurance, currentPrescription);
 		this.lastVisit = lastVisit;
 		setType("outPatient");
 	}
-	
+
 	// no prescriptions yet
-    public OutPatient(String name, String ssn, String address, String phone, String insurance, String lastVisit) {
-        super(name, ssn, address, phone, insurance);
-        this.lastVisit = lastVisit;
-        setType("outPatient");
-    }
-	//getters and setters
+	public OutPatient(String name, String ssn, String address, String phone, String insurance, String lastVisit) {
+		super(name, ssn, address, phone, insurance);
+		this.lastVisit = lastVisit;
+		setType("outPatient");
+	}
+
+	// getters and setters
 	public String getLastVisit() {
 		return lastVisit;
 	}
@@ -35,10 +36,9 @@ public class OutPatient extends Patient {
 		this.lastVisit = lastVisit;
 	}
 
-    @Override
-    public String toString() {
-        return super.toString() + ";" + lastVisit + ";"; //getCurrentPrescription();
-    }
+	@Override
+	public String toString() {
+		return super.toString() + ";" + lastVisit + ";"; // getCurrentPrescription();
+	}
 
-	
 }

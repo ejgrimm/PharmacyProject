@@ -41,10 +41,10 @@ public class Pharmacist extends Person {
 			// System.out.println(patient);
 
 			if (checkContraindications(rx, patient.getCurrentPrescription(), drugs) == true) {
-				
+
 				return "Has contraindications";
-				
-				//return false;
+
+				// return false;
 
 			} else {
 
@@ -58,7 +58,6 @@ public class Pharmacist extends Person {
 								.addToWatchlist(drugFinder(rx.getSetOfDrugLines().get(i).getDrug(), drugs));
 					}
 
-					
 					for (int j = 0; j < patient.getCurrentPrescription().size(); j++) {
 						if (patient.getCurrentPrescription().get(j).getDrug()
 								.equals(rx.getSetOfDrugLines().get(i).getDrug())) {
@@ -69,7 +68,6 @@ public class Pharmacist extends Person {
 							patient.getCurrentPrescription().get(j)
 									.setTimesRefilled(rx.getSetOfDrugLines().get(i).getTimesRefilled());
 
-							
 							counter++;
 						}
 
@@ -80,29 +78,28 @@ public class Pharmacist extends Person {
 						nd.setDosage(rx.getSetOfDrugLines().get(i).getDosage());
 						nd.setRemainingRefills(rx.getSetOfDrugLines().get(i).getRemainingRefills());
 						nd.setTimesRefilled(rx.getSetOfDrugLines().get(i).getTimesRefilled());
-						
+
 						patient.getCurrentPrescription().add(nd);
-						
-						
+
 					}
 					counter = 0;
 				}
 			}
 			commit("patients.txt", patients);
-			//return true;
-			//System.out.println("Hfsadf");
+			// return true;
+			// System.out.println("Hfsadf");
 			return "Prescription for " + rx.getPatient() + " was successfuly filled";
 		} else {
-			
+
 			return "Not authorized to fill out this prescription";
-			//System.out.println("Not authorized to fill out this prescription");
-			//return false;
+			// System.out.println("Not authorized to fill out this prescription");
+			// return false;
 		}
 	}
-	
+
 	public void commitFillPrescription(Prescription rx, Person p, ArrayList<Drug> drugs, ArrayList<Patient> patients,
 			ArrayList<Doctor> doctors, String fileName) {
-		String output=fillPrescription(rx,p,drugs,patients,doctors,fileName);
+		String output = fillPrescription(rx, p, drugs, patients, doctors, fileName);
 		try {
 			BufferedWriter w = new BufferedWriter(new FileWriter("Output.txt", true));
 			w.append(output + "\n");
@@ -111,50 +108,49 @@ public class Pharmacist extends Person {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 	public String[] commitHelp(ArrayList<Patient> patients) {
 		String[] patientInfo = new String[patients.size()];
-		for(int i = 0; i < patients.size();i++) {
-        	//System.out.print(patients.get(i));
-			patientInfo[i]="";
-			
-			patientInfo[i]+=patients.get(i);
-			
-        	// inner loop prints patient drug information
-        	for(int j = 0; j < patients.get(i).getCurrentPrescription().size(); j++) {
-            	//System.out.print(patients.get(i).getCurrentPrescription().get(j) + ";");
-            	patientInfo[i]+=patients.get(i).getCurrentPrescription().get(j) + ";";
-            }
-        	//System.out.println();  
-        	
-        	if(patients.get(i).getCurrentPrescription().isEmpty()){
-        		patientInfo[i]+="None;";
-        	}
-        }
-		
+		for (int i = 0; i < patients.size(); i++) {
+			// System.out.print(patients.get(i));
+			patientInfo[i] = "";
+
+			patientInfo[i] += patients.get(i);
+
+			// inner loop prints patient drug information
+			for (int j = 0; j < patients.get(i).getCurrentPrescription().size(); j++) {
+				// System.out.print(patients.get(i).getCurrentPrescription().get(j) + ";");
+				patientInfo[i] += patients.get(i).getCurrentPrescription().get(j) + ";";
+			}
+			// System.out.println();
+
+			if (patients.get(i).getCurrentPrescription().isEmpty()) {
+				patientInfo[i] += "None;";
+			}
+		}
+
 		return patientInfo;
 	}
-	
+
 	public void commit(String fileName, ArrayList<Patient> patients) {
-		
-		String[] pInfo=commitHelp(patients);
-		
+
+		String[] pInfo = commitHelp(patients);
+
 		try {
 			BufferedWriter w2 = new BufferedWriter(new FileWriter(fileName, false));
 			BufferedWriter w = new BufferedWriter(new FileWriter(fileName, true));
-			for(int i=0; i<commitHelp(patients).length; i++) {
+			for (int i = 0; i < commitHelp(patients).length; i++) {
 				w.append(pInfo[i] + "\n");
-				
-				
+
 			}
 			w.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public boolean checkContraindications(Prescription rx, ArrayList<DrugLine> currentPrescription,
@@ -211,8 +207,6 @@ public class Pharmacist extends Person {
 		return d;
 	}
 
-	
-	
 	@Override
 	public String toString() {
 		return "Pharmacist [certificationDate=" + certificationDate + ", toString()=" + super.toString() + "]";

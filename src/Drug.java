@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Drug {
 
-    //data members
+	// data members
 	private String name;
 	private String chemicalName;
 	private ArrayList<String> ingredients;
@@ -11,13 +11,14 @@ public class Drug {
 	private ArrayList<String> listOfConditions;
 	private ArrayList<String> listOfContraindications;
 	private boolean watchlist;
-	
-	//constructors
+
+	// constructors
 	public Drug() {
-		
+
 	}
-	
-	public Drug(String n, String cN, ArrayList<String> i, String mC, String t, ArrayList<String> lC, ArrayList<String> lCD, boolean w) {
+
+	public Drug(String n, String cN, ArrayList<String> i, String mC, String t, ArrayList<String> lC,
+			ArrayList<String> lCD, boolean w) {
 		name = n;
 		chemicalName = cN;
 		ingredients = i;
@@ -28,7 +29,7 @@ public class Drug {
 		watchlist = w;
 	}
 
-	//getters and setters
+	// getters and setters
 	public String getName() {
 		return name;
 	}
@@ -92,12 +93,12 @@ public class Drug {
 	public void setWatchlist(boolean watchlist) {
 		this.watchlist = watchlist;
 	}
-	
-	//tostring method for drug
-    public String toString() {
-        return "Drug [name=" + name + ", chemicalName=" + chemicalName + ", ingredients=" + ingredients
-                + ", manufacturingCompany=" + manufacturingCompany + ", type=" + type + ", listOfConditions="
-                + listOfConditions + ", listOfContraindications=" + listOfContraindications + ", watchlist=" + watchlist
-                + "]";
-    }
+
+	// tostring method for drug
+	public String toString() {
+		return "Drug [name=" + name + ", chemicalName=" + chemicalName + ", ingredients=" + ingredients
+				+ ", manufacturingCompany=" + manufacturingCompany + ", type=" + type + ", listOfConditions="
+				+ listOfConditions + ", listOfContraindications=" + listOfContraindications + ", watchlist=" + watchlist
+				+ "]";
+	}
 }

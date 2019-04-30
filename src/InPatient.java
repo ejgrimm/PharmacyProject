@@ -2,31 +2,31 @@ import java.util.ArrayList;
 
 public class InPatient extends Patient {
 
-	//data members
+	// data members
 	private int bedNum;
 
-	//constructors
-		
+	// constructors
+
 	public InPatient() {
 		super();
 	}
-	
+
 	// with existing prescriptions
-	public InPatient(String name, String ssn, String address, String phone, String insurance,
-			int bedNum, ArrayList<DrugLine> currentPrescription) {
+	public InPatient(String name, String ssn, String address, String phone, String insurance, int bedNum,
+			ArrayList<DrugLine> currentPrescription) {
 		super(name, ssn, address, phone, insurance, currentPrescription);
 		this.bedNum = bedNum;
 		setType("inPatient");
 	}
-	
-	// no prescriptions yet
-    public InPatient(String name, String ssn, String address, String phone, String insurance, int bedNum) {
-        super(name, ssn, address, phone, insurance);
-        this.bedNum = bedNum;
-        setType("inPatient");
-    }	
 
-	//getters and setters
+	// no prescriptions yet
+	public InPatient(String name, String ssn, String address, String phone, String insurance, int bedNum) {
+		super(name, ssn, address, phone, insurance);
+		this.bedNum = bedNum;
+		setType("inPatient");
+	}
+
+	// getters and setters
 	public int getBedNum() {
 		return bedNum;
 	}
@@ -35,10 +35,9 @@ public class InPatient extends Patient {
 		this.bedNum = bedNum;
 	}
 
-    @Override
-    public String toString() {
-        return super.toString() + ";" + bedNum + ";";//getCurrentPrescription();
-    }
-	
+	@Override
+	public String toString() {
+		return super.toString() + ";" + bedNum + ";";// getCurrentPrescription();
+	}
 
 }
