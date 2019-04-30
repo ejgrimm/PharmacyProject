@@ -27,13 +27,15 @@ public class PharmacyDriver {
 //        System.out.println(nurses.toString());
 //        System.out.println(prescriptions.toString());
                   
-        pharmacists.get(0).fillPrescription(prescriptions.get(13), nurses.get(0), drugs, patients, doctors,"patients.txt");
-        pharmacists.get(0).fillPrescription(prescriptions.get(15), nurses.get(0), drugs, patients, doctors,"patients.txt");
-        pharmacists.get(0).fillPrescription(prescriptions.get(6), nurses.get(0), drugs, patients, doctors,"patients.txt");
-        pharmacists.get(0).fillPrescription(prescriptions.get(8), nurses.get(0), drugs, patients, doctors,"patients.txt");
-        pharmacists.get(0).fillPrescription(prescriptions.get(10), nurses.get(0), drugs, patients, doctors,"patients.txt");
+       
+       
+        int z=0;
+        while(z<20) {
+        	 pharmacists.get(0).fillPrescription(prescriptions.get(z), nurses.get(0), drugs, patients, doctors,"patients.txt");	
+        	 z++;
+        }
         
-        createPharmacyObjects();
+        //createPharmacyObjects();
         // updated print out code
         // outer loop prints patient information
         for(int i = 0; i < patients.size();i++) {
