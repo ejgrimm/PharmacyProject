@@ -1,4 +1,4 @@
-Tuzistra XR
+TuzistraXR
 codeine
 chlorpheniramine,cherry flavor,citric acid,D&C Red No. 30,ethyl maltol,glycerin,methylparaben,polysorbate 80,polyvinyl acetate,povidone,propyl gallate,propylparaben,purified water,sodium citrate,sodium polystyrene sulfonate,starch,sucrose,triacetin,xanthan gum
 Tris Pharma
@@ -7,7 +7,7 @@ pain,cough
 benzodiazepines,opioids,antihistamines,antipsychotics,anti-anxiety agents,CNS depressants
 false
 
-Zohydro ER
+ZohydroER
 hydrocodone
 sugar spheres NF,hypromellose USP,ammonio methacrylate copolymer NF,silicon dioxide NF,talc USP,polyethylene oxide NF,povidone USP,titanium dioxide,FD&C Blue #1,FD&C Red #40,FDA Yellow iron oxide,FD&C Red #3,FDA Black iron oxide,FDA Red iron oxide,gelatin
 Zogenix
@@ -70,7 +70,7 @@ depression,obsessive-compulsive disorder,bulimia nervosa,panic disorder
 MAO inhibitors,serotonergic drugs,olanzapines,CYP3A4 inhibitors,anticonvulsants,antipsychotics,benzodiazepines,TCAs,CYP2D6 inducers
 false
 
-Ventolin HFA
+VentolinHFA
 albuterol sulfate
 propellant HFA-134a
 GlaxoSmithKline
@@ -160,7 +160,7 @@ pain
 indinavir,nelfinavir,ritonavir,clarithromycin,itraconazole,ketoconazole,nefazodone,saquinavir,telithromycin,aprepitant,diltiazem,erythromycin,fluconazole,verapamil,cimetidine,CYP3A4 inducers
 true
 
-Flovent HFA
+FloventHFA
 fluticasone propionate aerosol
 propellant HFA-134a
 GlaxoSmithKline

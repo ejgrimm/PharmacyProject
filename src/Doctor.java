@@ -59,16 +59,16 @@ public class Doctor extends Person {
                 }
             }
             if (numTimes > 5) {
-                commit("Output.txt","Caution! " + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
+                commit("Output.txt","Caution! " + this.getName() + " has prescribed " + d.getName() + " " + numTimes + " times.  ");
                 hasPrescribedAlot = true;
             }
             else {
-                commit("Output.txt","All clear!" + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
+                commit("Output.txt","All clear! " + this.getName() + " has prescribed " + d.getName() + " " + numTimes + " times.  ");
                 hasPrescribedAlot = false;
             }           
         }
         else {
-           commit("Output.txt","1st Time Prescription by " + this.getName() + " for "+ d.getName() + ".");
+           commit("Output.txt","1st Time Prescription by " + this.getName() + " for "+ d.getName() + ".  ");
         }
 
     }

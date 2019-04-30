@@ -1,22 +1,22 @@
-Hilda Spellman received 347863123 from Sara Majkic
-Sabrina Spellman received 935542221 from Nikola Pavlovic
-Harvey Kinkle received 347865795 from Ivana Djukic
-George Hawthrone received 654795742 from Maja Pejic
-Hilda Spellman received 987654321 from Jackie Peyton
-Ambrose Spellman received 493166093 from Zoey Markow
-Sabrina Spellman received 212083937 from Eleanor O'Hara
-Sabrina Spellman received 347865791 from Ivana Djukic
-Prudence Blackwood received 806717335 from Vlado Rosic
-Dorian Gray received 478180642 from Sara Majkic
-Sabrina Spellman received 321861423 from Tamara Stanojevic
-Sabrina Spellman received 321865693 from Minja Zeric
-Prudence Blackwood received 321235643 from Vlado Rosic
-Dorian Gray received 321861233 from Jackie Peyton
-Dorcus Night received 654795123 from Tamara Stanojevic
-Sabrina Spellman received 347863695 from Sasa Atelj
-Harvey Kinkle received 388451283 from Dr. Derek Shepherd
-Ambrose Spellman received 347865654 from Ivana Djukic
-Faustus Blackwood received 852795322 from Jackie Peyton
-Find doctors prescribing Zohydro ER
+Pharmacist Hilda Spellman received 347863123 from Sara Majkic
+Pharmacist Sabrina Spellman received 935542221 from Nikola Pavlovic
+Pharmacist Harvey Kinkle received 347865795 from Ivana Djukic
+Pharmacist George Hawthrone received 654795742 from Maja Pejic
+Pharmacist Hilda Spellman received 987654321 from Jackie Peyton
+Pharmacist Ambrose Spellman received 493166093 from Zoey Markow
+Pharmacist Sabrina Spellman received 212083937 from Eleanor O'Hara
+Pharmacist Sabrina Spellman received 347865791 from Ivana Djukic
+Pharmacist Prudence Blackwood received 806717335 from Vlado Rosic
+Pharmacist Dorian Gray received 478180642 from Sara Majkic
+Pharmacist Sabrina Spellman received 321861423 from Tamara Stanojevic
+Pharmacist Sabrina Spellman received 321865693 from Minja Zeric
+Pharmacist Prudence Blackwood received 321235643 from Vlado Rosic
+Pharmacist Dorian Gray received 321861233 from Jackie Peyton
+Pharmacist Dorcus Night received 654795123 from Tamara Stanojevic
+Pharmacist Sabrina Spellman received 347863695 from Sasa Atelj
+Pharmacist Harvey Kinkle received 388451283 from Derek Shepherd
+Pharmacist Ambrose Spellman received 347865654 from Ivana Djukic
+Pharmacist Faustus Blackwood received 852795322 from Jackie Peyton
+Find doctors prescribing ZohydroER
 Contraindications for Xanax
-Contact Dr. Derek Shepherd
+Contact Derek Shepherd

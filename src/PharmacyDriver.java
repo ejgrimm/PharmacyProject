@@ -24,15 +24,20 @@ public class PharmacyDriver {
         createPharmacyObjects();
         //System.out.println(drugs.toString());
 //        System.out.println(patients.toString());
-//        System.out.println(doctors.toString());
+        System.out.println(doctors.toString());
 //        System.out.println(pharmacists.toString());
 //        System.out.println(nurses.toString());
 //        System.out.println(prescriptions.toString());
                   
-        
-        
+        try {
+			BufferedWriter w = new BufferedWriter(new FileWriter("output.txt", false));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
        
-        
+       readTransactions();
+       /* 
         int k=0;
         while(k<27) {
         pharmacists.get(0).commitFillPrescription(prescriptions.get(k), nurses.get(0), drugs, patients, doctors,"patients.txt");
@@ -48,13 +53,13 @@ public class PharmacyDriver {
         ArrayList<Doctor> baddies = new ArrayList<Doctor>(findDoctors(doctors,drugs.get(2)));
         for(int i = 0; i < baddies.size();i++) {
         	System.out.println(baddies.get(i).getName());
-        }
+        }*/
     }
     // helper methods
     
     
     
-    public void readTransactions() {
+    public static void readTransactions() {
     	try {
     		String line;
 			Scanner scan=new Scanner(new File("Transactions.txt"));
@@ -62,7 +67,7 @@ public class PharmacyDriver {
 				line=scan.nextLine();
 				String contents[]=line.split(" ");
 				if(contents[0].equals("Pharmacist")) {
-					pharmacistFinder(contents[1]+contents[2],pharmacists).commitFillPrescription(prescriptionFinder(contents[4],prescriptions), nurses.get(0), drugs, patients, doctors,"patients.txt");
+					pharmacistFinder(contents[1]+" "+ contents[2],pharmacists).commitFillPrescription(prescriptionFinder(contents[4],prescriptions), findPerson(contents[6]+" "+ contents[7], patients,doctors,nurses), drugs, patients, doctors,"patients.txt");
 				}
 				else if(contents[0].equals("Find")) {
 					 ArrayList<Doctor> baddies=findDoctors(doctors,drugFinder(contents[3],drugs));
@@ -77,7 +82,7 @@ public class PharmacyDriver {
 				}
 				else if(contents[0].equals("Contact")) {
 					BufferedWriter w = new BufferedWriter(new FileWriter("output.txt", true));
-					w.append(doctorFinder(contents[1], doctors).contactDoctor() + "\n");
+					w.append(doctorFinder(contents[1] +" "+ contents[2], doctors).contactDoctor() + "\n");
 					w.close();
 				}
 				
@@ -96,7 +101,23 @@ public class PharmacyDriver {
     //helper for finding pharmacists
     
     
-    public Pharmacist pharmacistFinder(String ph, ArrayList<Pharmacist> pharmacists ) {
+    public static Person findPerson(String person, ArrayList<Patient> patients, ArrayList<Doctor> doctors, ArrayList<Nurse> nurses) {
+    	for (int i = 0; i < doctors.size(); i++) {
+			if (doctors.get(i).getName().equals(person))
+				return doctors.get(i);
+		}
+    	for (int i = 0; i < patients.size(); i++) {
+			if (patients.get(i).getName().equals(person))
+				return patients.get(i);
+		}
+    	for (int i = 0; i < nurses.size(); i++) {
+			if (nurses.get(i).getName().equals(person))
+				return nurses.get(i);
+		}
+    	return null;
+    }
+    
+    public static Pharmacist pharmacistFinder(String ph, ArrayList<Pharmacist> pharmacists ) {
 		Pharmacist p= new Pharmacist();
 		for (int i = 0; i < pharmacists.size(); i++) {
 			if (pharmacists.get(i).getName().equals(ph))
@@ -107,7 +128,7 @@ public class PharmacyDriver {
     
     
     
-    public Prescription prescriptionFinder(String id, ArrayList<Prescription> prescriptions ) {
+    public static Prescription prescriptionFinder(String id, ArrayList<Prescription> prescriptions ) {
     	Prescription pr= new Prescription();
 		for (int i = 0; i < prescriptions.size(); i++) {
 			if (prescriptions.get(i).getId().equals(id))
@@ -116,7 +137,7 @@ public class PharmacyDriver {
 		return pr;
 	}
     
-    public Doctor doctorFinder(String doctor, ArrayList<Doctor> doctors) {
+    public static Doctor doctorFinder(String doctor, ArrayList<Doctor> doctors) {
 		Doctor d = new Doctor();
 		for (int i = 0; i < doctors.size(); i++) {
 			if (doctors.get(i).getName().equals(doctor))
@@ -125,7 +146,7 @@ public class PharmacyDriver {
 		return d;
 	}
     
-    public Drug drugFinder(String drug, ArrayList<Drug> drugs) {
+    public static Drug drugFinder(String drug, ArrayList<Drug> drugs) {
 		Drug dr = new Drug();
 		for (int i = 0; i < drugs.size(); i++) {
 			if (drugs.get(i).getName().equals(drug))
@@ -136,7 +157,7 @@ public class PharmacyDriver {
 	}
     
     
-    public void findContraindications(String drug, ArrayList<Drug> drugs) {
+    public static void findContraindications(String drug, ArrayList<Drug> drugs) {
 		
 		
 				Drug d = drugFinder(drug, drugs);
