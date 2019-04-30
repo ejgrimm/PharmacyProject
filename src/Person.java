@@ -1,3 +1,7 @@
+/*Group 2: Alicia Anderson, Eric Grimm, Anthony Green, & Nicola Vuckovic
+CMS 270: Pharmacy Project
+Presented: April 30, 2019
+*/
 
 public class Person {
 

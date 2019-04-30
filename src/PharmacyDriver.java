@@ -1,3 +1,8 @@
+/*Group 2: Alicia Anderson, Eric Grimm, Anthony Green, & Nicola Vuckovic
+CMS 270: Pharmacy Project
+Presented: April 30, 2019
+*/
+
 import java.util.Scanner;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -22,33 +27,16 @@ public class PharmacyDriver {
 		// putting methods to instantiate objects from files in each Class
 		// create an arraylist of Class Objects from reading every file in driver
 		createPharmacyObjects();
-		// System.out.println(drugs.toString());
-//        System.out.println(patients.toString());
-		// System.out.println(doctors.toString());
-//        System.out.println(pharmacists.toString());
-//        System.out.println(nurses.toString());
-//        System.out.println(prescriptions.toString());
+
 
 		try {
 			BufferedWriter w = new BufferedWriter(new FileWriter("output.txt", false));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
 		readTransactions();
-		/*
-		 * int k=0; while(k<27) {
-		 * pharmacists.get(0).commitFillPrescription(prescriptions.get(k),
-		 * nurses.get(0), drugs, patients, doctors,"patients.txt"); k++; }
-		 * 
-		 * // *** findDoctors method testing --> works :) *** for(int i = 0; i<10; i++)
-		 * { doctors.get(0).addToWatchlist(drugs.get(2)); }
-		 * 
-		 * // testing find doctors ArrayList<Doctor> baddies = new
-		 * ArrayList<Doctor>(findDoctors(doctors,drugs.get(2))); for(int i = 0; i <
-		 * baddies.size();i++) { System.out.println(baddies.get(i).getName()); }
-		 */
+
 	}
 	// helper methods
 

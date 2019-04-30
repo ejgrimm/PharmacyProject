@@ -1,8 +1,11 @@
+/*Group 2: Alicia Anderson, Eric Grimm, Anthony Green, & Nicola Vuckovic
+CMS 270: Pharmacy Project
+Presented: April 30, 2019
+*/
+
 import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class Pharmacist extends Person {
@@ -86,14 +89,10 @@ public class Pharmacist extends Person {
 				}
 			}
 			commit("patients.txt", patients);
-			// return true;
-			// System.out.println("Hfsadf");
 			return "Prescription for " + rx.getPatient() + " was successfuly filled";
 		} else {
 
 			return "Not authorized to fill out this prescription";
-			// System.out.println("Not authorized to fill out this prescription");
-			// return false;
 		}
 	}
 
@@ -105,7 +104,6 @@ public class Pharmacist extends Person {
 			w.append(output + "\n");
 			w.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -114,17 +112,14 @@ public class Pharmacist extends Person {
 	public String[] commitHelp(ArrayList<Patient> patients) {
 		String[] patientInfo = new String[patients.size()];
 		for (int i = 0; i < patients.size(); i++) {
-			// System.out.print(patients.get(i));
 			patientInfo[i] = "";
 
 			patientInfo[i] += patients.get(i);
 
 			// inner loop prints patient drug information
 			for (int j = 0; j < patients.get(i).getCurrentPrescription().size(); j++) {
-				// System.out.print(patients.get(i).getCurrentPrescription().get(j) + ";");
 				patientInfo[i] += patients.get(i).getCurrentPrescription().get(j) + ";";
 			}
-			// System.out.println();
 
 			if (patients.get(i).getCurrentPrescription().isEmpty()) {
 				patientInfo[i] += "None;";
@@ -147,7 +142,6 @@ public class Pharmacist extends Person {
 			}
 			w.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
