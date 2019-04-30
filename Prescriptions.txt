@@ -21,7 +21,7 @@ Tuzistra XR;2.5mg;0;4
 212083937;03.31.19;Dr. April Kepner;Stefan Miskovic
 DRUGLINE
 Methadose;7mg;1;1
-DRUGLINEs
+DRUGLINE
 Robaxin;11mg;2;0
 
 579340304;04.10.19;Dr. Calliope "Callie" Torres;Srdjan Kovacevic
