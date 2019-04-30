@@ -114,7 +114,6 @@ public class Doctor extends Person {
 			w.close();
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
