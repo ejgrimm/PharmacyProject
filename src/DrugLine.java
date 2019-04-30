@@ -58,11 +58,6 @@ public class DrugLine {
 	}
 
 	// other methods
-	public void updateDrugLine() {
-		this.timesRefilled += 1;
-		this.remainingRefills -= 1;
-	}
-
 	@Override
 	public String toString() {
 		return drug + "," + dosage + "," + remainingRefills + "," + timesRefilled;
