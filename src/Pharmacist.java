@@ -41,7 +41,7 @@ public class Pharmacist extends Person implements Committable {
 			// System.out.println(patient);
 
 			if (checkContraindications(rx, patient.getCurrentPrescription(), drugs) == true) {
-				System.out.println("Hfsadf");
+				//System.out.println("Hfsadf");
 				return "Has contraindications";
 				
 				//return false;
@@ -90,7 +90,7 @@ public class Pharmacist extends Person implements Committable {
 			}
 			commit("patients.txt", patients);
 			//return true;
-			System.out.println("Hfsadf");
+			//System.out.println("Hfsadf");
 			return "Prescription for " + rx.getPatient() + " was successfuly filled";
 		} else {
 			System.out.println("Hfsadf");

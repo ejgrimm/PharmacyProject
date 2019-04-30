@@ -27,7 +27,7 @@ public class PharmacyDriver {
 //        System.out.println(prescriptions.toString());
                   
         int k=0;
-        while(k<20) {
+        while(k<27) {
         pharmacists.get(0).commitFillPrescription(prescriptions.get(k), nurses.get(0), drugs, patients, doctors,"patients.txt");
         k++;
         }
