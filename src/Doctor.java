@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Doctor extends Person implements Committable {
+public class Doctor extends Person {
     
     // data members   
     private String specialization;
@@ -59,16 +59,16 @@ public class Doctor extends Person implements Committable {
                 }
             }
             if (numTimes > 5) {
-                System.out.println("Caution! " + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
+                commit("Output.txt","Caution! " + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
                 hasPrescribedAlot = true;
             }
             else {
-                System.out.println("All clear!" + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
+                commit("Output.txt","All clear!" + this.getName() + " has prescribed " + d + " " + numTimes + " times.");
                 hasPrescribedAlot = false;
             }           
         }
         else {
-           System.out.println("1st Time Prescription by " + this.getName() + " for "+ d.getName() + ".");
+           commit("Output.txt","1st Time Prescription by " + this.getName() + " for "+ d.getName() + ".");
         }
 
     }
@@ -103,12 +103,13 @@ public class Doctor extends Person implements Committable {
 	public void incDCW() {
 		getDrugCounterWatch++;
 	}
-
-	@Override
-	public void commit(String fileName, ArrayList<Patient> patients) {
+	
+	public void commit(String fileName, String text) {
 		
 		try {
 			BufferedWriter w = new BufferedWriter(new FileWriter(fileName, true));
+			w.append(text);
+			w.close();
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
