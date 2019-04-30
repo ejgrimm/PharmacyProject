@@ -7,6 +7,7 @@ public class Doctor extends Person implements Committable {
     private String specialization;
     private ArrayList<Drug> watchlist;
     private boolean hasPrescribedAlot;
+    private int getDrugCounterWatch;
     
     // constructors - both
     public Doctor() {
@@ -89,7 +90,15 @@ public class Doctor extends Person implements Committable {
 
 	public void setHasPrescribedAlot(boolean hasPrescribedAlot) {
 		this.hasPrescribedAlot = hasPrescribedAlot;
-	} 
+	}
+	
+	public int getDrugCounterWatch() {
+		return getDrugCounterWatch;
+	}
+	
+	public void incDCW() {
+		getDrugCounterWatch++;
+	}
 	
 	public void commit(String filename) {
 		

@@ -29,6 +29,12 @@ public class PharmacyDriver {
                   
         pharmacists.get(0).fillPrescription(prescriptions.get(13), nurses.get(0), drugs, patients, doctors,"patients.txt");
         
+//		*** findDoctors method testing --> works :) ***
+//      for(int i = 0; i<10; i++) {
+//      	 doctors.get(0).addToWatchlist(drugs.get(2));
+//      }
+//      
+//      System.out.println(findDoctors(doctors, drugs.get(2)));
         
         // updated print out code
         // outer loop prints patient information
@@ -222,22 +228,27 @@ public class PharmacyDriver {
         scan.close();
     }  
     
-    private static ArrayList<Doctor> findDoctors(ArrayList<Doctor> doctors, Drug drug) {
-    	//drug on watchlist?
-    	int drugCounter = 0;
+private static ArrayList<Doctor> findDoctors(ArrayList<Doctor> doctors, Drug drug) {
     	
+    	doctorsAlot = new ArrayList<Doctor>();
+    	
+    	//drug on watchlist?
     	if (drug.getWatchlist()) {
     		//yes? --> check every doctors list for watchlist drug
     		for(int i = 0; i<doctors.size(); i++) {
     			if(doctors.get(i).getWatchlist().contains(drug)) {
     				for (int a = 0; a<doctors.get(i).getWatchlist().size(); a++) {
     					if (doctors.get(i).getWatchlist().get(a) == drug) {
-    						
+    						doctors.get(i).incDCW();
     					}
     				}
     			}
+    			if (doctors.get(i).getDrugCounterWatch() > 5) {
+    				doctorsAlot.add(doctors.get(i));
+    			}
         	}
     	}
+    	
     	return doctorsAlot;
     	
     }
