@@ -1,3 +1,6 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -45,9 +48,10 @@ public class Doctor extends Person implements Committable {
     // run this method BEFORE addToWatchlist!!!
     public void watchlistAlert(Drug d) {
         // if any Drug occurs on the doctor's watchlist more than 5 times
-        if (this.watchlist.contains(d)) {
-            // count occurrences of Drug in Array List
-            int numTimes = 0;
+        
+    	if (this.watchlist.contains(d)) {
+    		int numTimes = 1; // this starts at 1 since a doctor has already prescribed the drug once if you are in this if
+    		// count occurrences of Drug in Array List
             Iterator<Drug> i = watchlist.iterator();
             while (i.hasNext()) {
                 if (i.next() == d) {
@@ -64,7 +68,7 @@ public class Doctor extends Person implements Committable {
             }           
         }
         else {
-           System.out.println("1st Time Prescription by " + this.getName() + " for "+ d.getName() + "."); 
+           System.out.println("1st Time Prescription by " + this.getName() + " for "+ d.getName() + ".");
         }
 
     }
@@ -99,16 +103,17 @@ public class Doctor extends Person implements Committable {
 	public void incDCW() {
 		getDrugCounterWatch++;
 	}
-	
-	public void commit(String filename) {
-		
-		
-		
-	}
 
 	@Override
 	public void commit(String fileName, ArrayList<Patient> patients) {
-		// TODO Auto-generated method stub
+		
+		try {
+			BufferedWriter w = new BufferedWriter(new FileWriter(fileName, true));
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 }

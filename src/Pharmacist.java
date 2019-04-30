@@ -104,7 +104,7 @@ public class Pharmacist extends Person implements Committable {
 			ArrayList<Doctor> doctors, String fileName) {
 		String output=fillPrescription(rx,p,drugs,patients,doctors,fileName);
 		try {
-			BufferedWriter w = new BufferedWriter(new FileWriter("output.txt", true));
+			BufferedWriter w = new BufferedWriter(new FileWriter("Output.txt", true));
 			w.append(output + "\n");
 			w.close();
 		} catch (IOException e) {
@@ -139,7 +139,7 @@ public class Pharmacist extends Person implements Committable {
 	
 	public void commit(String fileName, ArrayList<Patient> patients) {
 		
-		String[] pInfo=commitHelp( patients);
+		String[] pInfo=commitHelp(patients);
 		
 		try {
 			BufferedWriter w2 = new BufferedWriter(new FileWriter(fileName, false));
