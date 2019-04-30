@@ -14,7 +14,6 @@ public class PharmacyDriver {
     private static ArrayList<Drug> drugs;
     private static ArrayList<Prescription> prescriptions;
 
-
     public static void main(String[] args) {     
 
         // putting methods to instantiate objects from files in each Class
@@ -27,14 +26,20 @@ public class PharmacyDriver {
 //        System.out.println(nurses.toString());
 //        System.out.println(prescriptions.toString());
                   
-        pharmacists.get(0).fillPrescription(prescriptions.get(13), nurses.get(0), drugs, patients, doctors,"patients.txt");
+        int k=0;
+        while(k<20) {
+        pharmacists.get(0).fillPrescription(prescriptions.get(k), nurses.get(0), drugs, patients, doctors,"patients.txt");
+        k++;
+        }
         
 //		*** findDoctors method testing --> works :) ***
-//      for(int i = 0; i<10; i++) {
-//      	 doctors.get(0).addToWatchlist(drugs.get(2));
-//      }
-//      
-//      System.out.println(findDoctors(doctors, drugs.get(2)));
+        for(int i = 0; i<10; i++) {
+        	doctors.get(0).addToWatchlist(drugs.get(2));
+        	}
+        
+      
+        ArrayList<Doctor> baddies = new ArrayList<Doctor>(findDoctors(doctors,drugs.get(2)));
+        System.out.println(baddies);
         
         // updated print out code
         // outer loop prints patient information
@@ -51,8 +56,8 @@ public class PharmacyDriver {
         }*/
 
 
+    
     }
-
     // helper methods
     private static void createPharmacyObjects() {
     	
