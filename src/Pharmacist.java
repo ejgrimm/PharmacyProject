@@ -57,7 +57,7 @@ public class Pharmacist extends Person implements Committable {
 								.addToWatchlist(drugFinder(rx.getSetOfDrugLines().get(i).getDrug(), drugs));
 					}
 
-					System.out.println(rx.getSetOfDrugLines().get(i).getDrug());
+					
 					for (int j = 0; j < patient.getCurrentPrescription().size(); j++) {
 						if (patient.getCurrentPrescription().get(j).getDrug()
 								.equals(rx.getSetOfDrugLines().get(i).getDrug())) {
@@ -109,7 +109,11 @@ public class Pharmacist extends Person implements Committable {
             	//System.out.print(patients.get(i).getCurrentPrescription().get(j) + ";");
             	patientInfo[i]+=patients.get(i).getCurrentPrescription().get(j) + ";";
             }
-        	//System.out.println();     	
+        	//System.out.println();  
+        	
+        	if(patients.get(i).getCurrentPrescription().isEmpty()){
+        		patientInfo[i]+="None;";
+        	}
         }
 		
 		return patientInfo;
