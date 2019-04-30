@@ -20,7 +20,7 @@ public class PharmacyDriver {
         // putting methods to instantiate objects from files in each Class
         // create an arraylist of Class Objects from reading every file in driver
         createPharmacyObjects();
-        System.out.println(drugs.toString());
+        //System.out.println(drugs.toString());
 //        System.out.println(patients.toString());
 //        System.out.println(doctors.toString());
 //        System.out.println(pharmacists.toString());
@@ -28,22 +28,21 @@ public class PharmacyDriver {
 //        System.out.println(prescriptions.toString());
                   
         pharmacists.get(0).fillPrescription(prescriptions.get(13), nurses.get(0), drugs, patients, doctors,"patients.txt");
-        pharmacists.get(0).fillPrescription(prescriptions.get(15), nurses.get(0), drugs, patients, doctors,"patients.txt");
-        pharmacists.get(0).fillPrescription(prescriptions.get(6), nurses.get(0), drugs, patients, doctors,"patients.txt");
-        //pharmacists.get(0).fillPrescription(prescriptions.get(8), nurses.get(0), drugs, patients, doctors,"patients.txt");
-       //pharmacists.get(0).fillPrescription(prescriptions.get(10), nurses.get(0), drugs, patients, doctors,"patients.txt");
         
-        //createPharmacyObjects();
+        
         // updated print out code
         // outer loop prints patient information
-        for(int i = 0; i < patients.size();i++) {
+        
+        // print out patients
+        
+        /*for(int i = 0; i < patients.size();i++) {
         	System.out.print(patients.get(i));
         	// inner loop prints patient drug information
         	for(int j = 0; j < patients.get(i).getCurrentPrescription().size(); j++) {
             	System.out.print(patients.get(i).getCurrentPrescription().get(j) + ";");
             }
         	System.out.println();     	
-        }
+        }*/
 
 
     }
