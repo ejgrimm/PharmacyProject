@@ -28,13 +28,14 @@ public class PharmacyDriver {
 		// create an arraylist of Class Objects from reading every file in driver
 		createPharmacyObjects();
 
-
+		//this clears the output.txt file so we can show that it all works properly
 		try {
 			BufferedWriter w = new BufferedWriter(new FileWriter("output.txt", false));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		
+		//calling the readTransactions 
 		readTransactions();
 
 	}
@@ -45,6 +46,8 @@ public class PharmacyDriver {
 		try {
 			String line;
 			Scanner scan = new Scanner(new File("Transactions.txt"));
+			
+			//loop that scans the transactions file and according to the contents of the line it calls the appropriate methods or does appropriate actions
 			while (scan.hasNextLine()) {
 				line = scan.nextLine();
 				String contents[] = line.split(" ");
@@ -106,6 +109,7 @@ public class PharmacyDriver {
 		return p;
 	}
 
+	// returns the prescription object that has a certain ID
 	public static Prescription prescriptionFinder(String id, ArrayList<Prescription> prescriptions) {
 		Prescription pr = new Prescription();
 		for (int i = 0; i < prescriptions.size(); i++) {
@@ -115,6 +119,7 @@ public class PharmacyDriver {
 		return pr;
 	}
 
+	// returns a doctor method of certain name
 	public static Doctor doctorFinder(String doctor, ArrayList<Doctor> doctors) {
 		Doctor d = new Doctor();
 		for (int i = 0; i < doctors.size(); i++) {
@@ -124,6 +129,7 @@ public class PharmacyDriver {
 		return d;
 	}
 
+	// returns a drug of certain name
 	public static Drug drugFinder(String drug, ArrayList<Drug> drugs) {
 		Drug dr = new Drug();
 		for (int i = 0; i < drugs.size(); i++) {
@@ -134,6 +140,8 @@ public class PharmacyDriver {
 		return dr;
 	}
 
+	
+	// method that prints contraindications of a certain drug to the output.txt file
 	public static void findContraindications(String drug, ArrayList<Drug> drugs) {
 
 		Drug d = drugFinder(drug, drugs);
@@ -254,6 +262,7 @@ public class PharmacyDriver {
 		return drugs;
 	}
 
+	//method that reads the patients file and calls the fillPatientsArray method
 	private static void readPatientFile(String fileName) {
 		File file = new File(fileName);
 		Scanner scan = null;
@@ -275,6 +284,7 @@ public class PharmacyDriver {
 		scan.close();
 	}
 
+	//helper method that fills the patients arrayList with patient info
 	private static ArrayList<Patient> fillPatientsArray(String[] values) {
 		ArrayList<DrugLine> drugLine = new ArrayList<DrugLine>();
 		if (values[7].equals("None")) {
@@ -300,6 +310,8 @@ public class PharmacyDriver {
 		return patients;
 	}
 
+	
+	//reads the doctors file and calls the fillDoctorsArray helper method
 	private static void readDoctorFile(String fileName) {
 		File file = new File(fileName);
 		Scanner scan = null;
@@ -321,6 +333,8 @@ public class PharmacyDriver {
 		scan.close();
 	}
 
+	
+	//method that returns the list of the doctors that have prescribed a certain drug more than allowed number of times
 	private static ArrayList<Doctor> findDoctors(ArrayList<Doctor> doctors, Drug drug) {
 
 		doctorsAlot = new ArrayList<Doctor>();
@@ -346,11 +360,14 @@ public class PharmacyDriver {
 
 	}
 
+	//method that fills the doctors arraylist with doctor information
 	private static ArrayList<Doctor> fillDoctorsArray(String[] values) {
 		doctors.add(new Doctor(values[0], values[1], values[2], values[3], values[4]));
 		return doctors;
 	}
 
+	
+	//reads pharmacist file and calls fillPharmacistArray helper method
 	private static void readPharmacistFile(String fileName) {
 		File file = new File(fileName);
 		Scanner scan = null;
@@ -372,12 +389,15 @@ public class PharmacyDriver {
 		scan.close();
 	}
 
+	//helper method that fills the pharmacists arraylist with pharmacist info
 	private static ArrayList<Pharmacist> fillPharmacistsArray(String[] values) {
 
 		pharmacists.add(new Pharmacist(values[0], values[1], values[2], values[3], values[4]));
 		return pharmacists;
 	}
 
+	
+	//reads the nursefile and calls fillsNurseArray helper method method
 	private static void readNurseFile(String fileName) {
 		File file = new File(fileName);
 		Scanner scan = null;
@@ -399,11 +419,14 @@ public class PharmacyDriver {
 		scan.close();
 	}
 
+	//helper method that fills the nurses arraylist with nurse info
 	private static ArrayList<Nurse> fillNursesArray(String[] values) {
 		nurses.add(new Nurse(values[0], values[1], values[2], values[3], values[4], values[5]));
 		return nurses;
 	}
 
+	
+	//method that reads prescription file and fills the prescriptions arrayList
 	private static void readPrescriptionsFile(String fileName) {
 
 		// initialize variables to be used in this method

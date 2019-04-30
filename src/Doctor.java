@@ -106,6 +106,8 @@ public class Doctor extends Person {
 		getDrugCounterWatch++;
 	}
 
+	
+	//helper method for watchListAlert method that prints to the file
 	public void commit(String fileName, String text) {
 
 		try {
