@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-public class Pharmacist extends Person implements Committable {
+public class Pharmacist extends Person {
 
 	// data members
 	private String certificationDate;

@@ -24,7 +24,7 @@ public class PharmacyDriver {
         createPharmacyObjects();
         //System.out.println(drugs.toString());
 //        System.out.println(patients.toString());
-        System.out.println(doctors.toString());
+        //System.out.println(doctors.toString());
 //        System.out.println(pharmacists.toString());
 //        System.out.println(nurses.toString());
 //        System.out.println(prescriptions.toString());
