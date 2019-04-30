@@ -68,7 +68,7 @@ Humalog;15ml;3;1
 DRUGLINE
 Lantus;15ml;4;0
 
-478180642;03.16.19;Dr. Amelia Shepherd;Aleksandra Romanic
+478180642;03.16.19;Dr. Amelia Shepherd;Sara Majkic
 DRUGLINE
 Prozac;15mg;1;4
 
@@ -86,7 +86,7 @@ Robaxin;5mg;2;0
 DRUGLINE
 Tuzistra XR;2.5mg;0;4
 
-630929425;04.20.19;Dr. Preston Burke;Sara Majkic;
+630929425;04.20.19;Dr. Preston Burke;Sara Majkic
 DRUGLINE
 Abstral;3mg;2;1
 DRUGLINE
@@ -99,4 +99,32 @@ Ambien;10mg;0;4
 347865791;04.02.19;Dr. Erica Hahn;Ivana Djukic
 DRUGLINE
 Xanax;5mg;0;5
+
+347865795;04.02.19;Dr. Erica Hahn;Ivana Djukic
+DRUGLINE
+Zohydro ER;5mg;0;5
+
+347863695;04.02.19;Dr. Erica Hahn;Sasa Atelj
+DRUGLINE
+Zohydro ER;5mg;0;5
+
+347863123;04.02.19;Dr. Erica Hahn;Sara Majkic
+DRUGLINE
+Zohydro ER;5mg;0;5
+
+321861233;04.02.19;Dr. Erica Hahn;Nikola Pavlovic
+DRUGLINE
+Zohydro ER;5mg;0;5
+
+321235643;04.02.19;Dr. Erica Hahn;Vlado Rosic
+DRUGLINE
+Zohydro ER;5mg;0;5
+
+321865693;04.02.19;Dr. Erica Hahn;Minja Zeric
+DRUGLINE
+Zohydro ER;5mg;0;5
+
+321861423;04.02.19;Dr. Erica Hahn;Tamara Stanojevic
+DRUGLINE
+Zohydro ER;5mg;0;5
 
