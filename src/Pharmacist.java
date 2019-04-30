@@ -30,7 +30,7 @@ public class Pharmacist extends Person implements Committable {
 
 	// other methods
 
-	public boolean fillPrescription(Prescription rx, Person p, ArrayList<Drug> drugs, ArrayList<Patient> patients,
+	public String fillPrescription(Prescription rx, Person p, ArrayList<Drug> drugs, ArrayList<Patient> patients,
 			ArrayList<Doctor> doctors, String fileName) {
 		// check if authorized
 		if (p instanceof OutPatient || p instanceof Nurse) {
@@ -41,9 +41,10 @@ public class Pharmacist extends Person implements Committable {
 			// System.out.println(patient);
 
 			if (checkContraindications(rx, patient.getCurrentPrescription(), drugs) == true) {
-
-				System.out.println("Has contraindications");
-				return false;
+				System.out.println("Hfsadf");
+				return "Has contraindications";
+				
+				//return false;
 
 			} else {
 
@@ -88,12 +89,29 @@ public class Pharmacist extends Person implements Committable {
 				}
 			}
 			commit("patients.txt", patients);
-			return true;
+			//return true;
+			System.out.println("Hfsadf");
+			return "Prescription for " + rx.getPatient() + " was successfuly filled";
 		} else {
-
-			System.out.println("Not authorized to fill out this prescription");
-			return false;
+			System.out.println("Hfsadf");
+			return "Not authorized to fill out this prescription";
+			//System.out.println("Not authorized to fill out this prescription");
+			//return false;
 		}
+	}
+	
+	public void commitFillPrescription(Prescription rx, Person p, ArrayList<Drug> drugs, ArrayList<Patient> patients,
+			ArrayList<Doctor> doctors, String fileName) {
+		String output=fillPrescription(rx,p,drugs,patients,doctors,fileName);
+		try {
+			BufferedWriter w = new BufferedWriter(new FileWriter("output.txt", true));
+			w.append(output + "\n");
+			w.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 	
 	public String[] commitHelp(ArrayList<Patient> patients) {

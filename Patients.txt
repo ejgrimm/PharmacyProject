@@ -18,4 +18,3 @@ outPatient;Vanja Zeric;101-25-1441;2451 Orange Ave., winter park, 32789, Florida
 outPatient;Milos Balaban;645-99-3344;2889 Holt Ave., winter park, 32789, Florida;407-011-8243;United Healthcare;03/14/2018;None;
 outPatient;Milena Putnik;780-41-3588;1036 Fairbanks, winter park, 32789, Florida;407-505-9331;Blue Cross;07/25/2017;None;
 outPatient;Tamara Stanojevic;121-69-7820;2555 Orange Ave., winter park, 32789, Florida;407-100-3067;WellCare;06/29/2018;Yaz,4mg,10,2;
-outPatient;Ta Stano;999-69-7820;2555 Orange Ave., winter park, 32789, Florida;407-100-3067;WellCoe;06/29/3056;Ambien,10mg,0,4;

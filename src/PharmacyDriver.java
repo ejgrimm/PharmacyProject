@@ -28,7 +28,7 @@ public class PharmacyDriver {
                   
         int k=0;
         while(k<20) {
-        pharmacists.get(0).fillPrescription(prescriptions.get(k), nurses.get(0), drugs, patients, doctors,"patients.txt");
+        pharmacists.get(0).commitFillPrescription(prescriptions.get(k), nurses.get(0), drugs, patients, doctors,"patients.txt");
         k++;
         }
         
