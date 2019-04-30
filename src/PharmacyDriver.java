@@ -1,6 +1,9 @@
 import java.util.Scanner;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class PharmacyDriver {
@@ -26,6 +29,10 @@ public class PharmacyDriver {
 //        System.out.println(nurses.toString());
 //        System.out.println(prescriptions.toString());
                   
+        
+        
+       
+        
         int k=0;
         while(k<27) {
         pharmacists.get(0).commitFillPrescription(prescriptions.get(k), nurses.get(0), drugs, patients, doctors,"patients.txt");
@@ -44,6 +51,113 @@ public class PharmacyDriver {
         }
     }
     // helper methods
+    
+    
+    
+    public void readTransactions() {
+    	try {
+    		String line;
+			Scanner scan=new Scanner(new File("Transactions.txt"));
+			while(scan.hasNextLine()) {
+				line=scan.nextLine();
+				String contents[]=line.split(" ");
+				if(contents[0].equals("Pharmacist")) {
+					pharmacistFinder(contents[1]+contents[2],pharmacists).commitFillPrescription(prescriptionFinder(contents[4],prescriptions), nurses.get(0), drugs, patients, doctors,"patients.txt");
+				}
+				else if(contents[0].equals("Find")) {
+					 ArrayList<Doctor> baddies=findDoctors(doctors,drugFinder(contents[3],drugs));
+					 BufferedWriter w = new BufferedWriter(new FileWriter("output.txt", true));
+					 for(int i = 0; i < baddies.size();i++) {
+				        	w.append(baddies.get(i).getName() + "\n");
+				        	w.close();
+				        } 
+				}
+				else if(contents[0].equals("Contraindications")) {
+					findContraindications(contents[2], drugs);
+				}
+				else if(contents[0].equals("Contact")) {
+					BufferedWriter w = new BufferedWriter(new FileWriter("output.txt", true));
+					w.append(doctorFinder(contents[1], doctors).contactDoctor() + "\n");
+					w.close();
+				}
+				
+			}
+			scan.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    	
+    }
+    
+    //helper for finding pharmacists
+    
+    
+    public Pharmacist pharmacistFinder(String ph, ArrayList<Pharmacist> pharmacists ) {
+		Pharmacist p= new Pharmacist();
+		for (int i = 0; i < pharmacists.size(); i++) {
+			if (pharmacists.get(i).getName().equals(ph))
+				p = pharmacists.get(i);
+		}
+		return p;
+	}
+    
+    
+    
+    public Prescription prescriptionFinder(String id, ArrayList<Prescription> prescriptions ) {
+    	Prescription pr= new Prescription();
+		for (int i = 0; i < prescriptions.size(); i++) {
+			if (prescriptions.get(i).getId().equals(id))
+				pr = prescriptions.get(i);
+		}
+		return pr;
+	}
+    
+    public Doctor doctorFinder(String doctor, ArrayList<Doctor> doctors) {
+		Doctor d = new Doctor();
+		for (int i = 0; i < doctors.size(); i++) {
+			if (doctors.get(i).getName().equals(doctor))
+				d = doctors.get(i);
+		}
+		return d;
+	}
+    
+    public Drug drugFinder(String drug, ArrayList<Drug> drugs) {
+		Drug dr = new Drug();
+		for (int i = 0; i < drugs.size(); i++) {
+			if (drugs.get(i).getName().equals(drug))
+				dr = drugs.get(i);
+		}
+
+		return dr;
+	}
+    
+    
+    public void findContraindications(String drug, ArrayList<Drug> drugs) {
+		
+		
+				Drug d = drugFinder(drug, drugs);
+				 try {
+					BufferedWriter w = new BufferedWriter(new FileWriter("output.txt", true));
+					w.append("Contraindications for " + drug + " are: " + "\n");
+					int size = d.getListOfContraindications().size();
+					for (int k = 0; k < size; k++) {
+					w.append( d.getListOfContraindications().get(k) + "\n");						
+					}	
+					w.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+		
+
+	}
+    
+    
     private static void createPharmacyObjects() {
     	
         // calls all methods that read files and initialize objects in arraylists

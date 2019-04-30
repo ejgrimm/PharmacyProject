@@ -19,7 +19,11 @@ public class Prescription {
 		this.patient = patient;
 	}
 
-
+	public Prescription() {
+		
+	}
+	
+	
 	public String getId() {
 		return id;
 	}
